@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --offWhite: #f8f8f8;
+  --offWhite: #2e2e2e;
   --main-color: #fac06a;
   --primary-color: #ee2424;
 }
@@ -34,8 +34,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #E8C396;
-  opacity: 0.96;
+  background-color: var(--offWhite);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: -1;
