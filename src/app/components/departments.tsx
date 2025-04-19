@@ -41,7 +41,7 @@ export const Departments = () => {
                         At our <span className="italic text-orange-500">beauty clinic</span>, we believe that skincare is more than a routine, it&#39;s a journey to confidence and lasting radiance.
                         Our expert treatments are designed to nourish, rejuvenate, and reveal your skin&#39;s
                         natural beauty. Using the latest techniques and high-quality products, we personalize every
-                        service to suit your unique needs. Whether you're seeking a glowing complexion, anti-aging
+                        service to suit your unique needs. Whether you&#39;re seeking a glowing complexion, anti-aging
                         solutions, or simply a moment of self-care, our clinic is your trusted destination for healthy,
                         beautiful skin.
                     </p>}

@@ -16,20 +16,20 @@ export const Navbar = () => {
                 <div className="flex items-center justify-center gap-4">
                     <div className="flex items-center text-sm p-1 ps-2">
                         <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
-                        <a
+                        <Link
                             className="hover:text-red-600 ps-2 transition duration-300"
                             href="tel:+010000000">
                             +971010000000
-                        </a>
+                        </Link>
                     </div>
                     <span className="border-r border-white py-4"></span>
                     <div className="flex items-center text-md p-1">
                         <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" />
-                        <a
+                        <Link
                             className="hover:text-red-600 ps-2 transition duration-300"
                             href="example@test.com">
                             example@test.com
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex items-center justify-center pe-5 gap-4">
@@ -54,21 +54,21 @@ export const Navbar = () => {
                     />
                 </li>
                 <li className="relative flex gap-4">
-                    <a href="#" className="text-md hover:text-red-500">Home</a>
+                    <Link href="#" className="text-md hover:text-red-500">Home</Link>
                     <span className="border-r border-white py-3"></span>
-                    <a href="/#Whyus" className="text-md hover:text-red-500">Why us?</a>
+                    <Link href="/#Whyus" className="text-md hover:text-red-500">Why us?</Link>
                     <span className="border-r border-white py-3"></span>
-                    <a
+                    <Link
                     href="/#departments" 
                     className="text-md hover:text-red-500">
                         Departments
-                    </a>
+                    </Link>
                     <span className="border-r border-white py-3"></span>
-                    <a href="#" className="text-md hover:text-red-500">Experts</a>
+                    <Link href="#" className="text-md hover:text-red-500">Experts</Link>
                     <span className="border-r border-white py-3"></span>
-                    <a href="#" className="text-md hover:text-red-500">Contact</a>
+                    <Link href="#" className="text-md hover:text-red-500">Contact</Link>
                     <span className="border-r border-white py-3"></span>
-                    <a href="#" className="text-md hover:text-red-500">Book now</a>
+                    <Link href="#" className="text-md hover:text-red-500">Book now</Link>
                 </li>
             </ul>
             <div className="lg:hidden flex items-center justify-between p-4">
