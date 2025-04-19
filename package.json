@@ -2,7 +2,6 @@
   "name": "bloom-next",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ezzeldeentantawy.github.io/bloom-next",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,10 +23,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
     "gh-pages": "^6.3.0",
-    "tailwindcss": "^4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
     "typescript": "^5"
   }
 }

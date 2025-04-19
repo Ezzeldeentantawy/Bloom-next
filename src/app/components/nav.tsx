@@ -48,7 +48,7 @@ export const Navbar = () => {
             </div>
             <ul className="hidden lg:flex justify-between items-center z-10 pe-5">
                 <li className="text-2xl font-bold ms-5">
-                    <Image src="/nav/logo.png" alt="our logo"
+                    <Image src="/header/nav/logo.png" alt="our logo"
                     width={120}
                     height={100}
                     />
