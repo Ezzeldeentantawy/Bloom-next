@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --offWhite: #fff5da;
+  --offWhite: #f8f8f8;
   --main-color: #fac06a;
   --primary-color: #ee2424;
 }
@@ -17,7 +17,12 @@ html {
 .pcbg {
   background-color: var(--primary-color);
 }
-
+.text-main-color {
+  color: var(--main-color);
+}
+.why-shadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
 .nav-blurry-bg {
   position: relative;
 }
@@ -30,42 +35,8 @@ html {
   right: 0;
   bottom: 0;
   background-color: #E8C396;
-  opacity: 0.7;
+  opacity: 0.96;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: -1;
-}
-ul-blurry-bg {
-  position: relative;
-}
-ul-blurry-bg::before {
-  content: "";
-  position: absolute;
-  top: 10;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: 0.8;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  z-index: -1;
-}
-.header{
-  position: relative;
-  z-index: 4;
-}
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #e62416;
-  opacity: 0.5;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  z-index: -1;
-  border-radius: 20px;
 }
