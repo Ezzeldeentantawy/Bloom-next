@@ -86,8 +86,8 @@ export const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
                 </div>
             </div>
-            <div className="fixed bottom-0 left-0 right-0 flex items-center justify-between text-black">
-                <button className="bg-orange-400 rounded-2xl hover:bg-orange-500 text-white font-bold py-2 px-4 mt-4 mb-2">
+            <div className="fixed bottom-0 left-2 right-2 flex items-center justify-between text-black">
+                <button className="mcbg rounded-2xl text-black font-bold py-2 px-4 mt-4 mb-2">
                     <Link href={"/book-now"}>
                         book now
                     </Link>

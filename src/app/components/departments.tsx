@@ -2,9 +2,9 @@ import { DepartmentCard } from "./departments/department-card"
 
 export const Departments = () => {
     return(
-        <section className="mt-5" id="departments">
+        <section className="mt-5 mb-5" id="departments">
             <div>
-                <h1 className="text-4xl font-bold text-orange-500 text-center mb-4">
+                <h1 className="text-4xl font-bold text-main-color text-center mb-4">
                     Our Departments
                 </h1>
                 <p className="text-center text-lg">
@@ -17,7 +17,7 @@ export const Departments = () => {
                     alt="Precision Diagnostics Lab image"
                     title="Precision Diagnostics Lab"
                     describtion={<p>
-                        At <span className="text-orange-500 italic">Precision Diagnostics Lab</span>, we utilize cutting-edge AI technology
+                        At <span className="text-primary-color">Precision Diagnostics Lab</span>, we utilize cutting-edge AI technology
                         and advanced
                         medical equipment to provide comprehensive diagnostics and accurate
                         assessments
@@ -29,7 +29,7 @@ export const Departments = () => {
                     alt="Dermatology & Aesthic image"
                     title="Dermatology & Aesthetics"
                     describtion={<p>
-                        Our <span className="text-orange-500 italic">Dermatology & Aesthetics</span> department offers a wide range of services,
+                        Our <span className="text-primary-color">Dermatology & Aesthetics</span> department offers a wide range of services,
                         including skin rejuvenation, acne treatment, and anti-aging solutions.
                     </p>}
                 />
@@ -38,7 +38,7 @@ export const Departments = () => {
                     alt="Beauty and skin care image"
                     title="Beauty and Skin Care"
                     describtion={<p>
-                        At our <span className="italic text-orange-500">beauty clinic</span>, we believe that skincare is more than a routine, it&#39;s a journey to confidence and lasting radiance.
+                        At our <span className="text-primary-color">beauty clinic</span>, we believe that skincare is more than a routine, it&#39;s a journey to confidence and lasting radiance.
                         Our expert treatments are designed to nourish, rejuvenate, and reveal your skin&#39;s
                         natural beauty. Using the latest techniques and high-quality products, we personalize every
                         service to suit your unique needs. Whether you&#39;re seeking a glowing complexion, anti-aging

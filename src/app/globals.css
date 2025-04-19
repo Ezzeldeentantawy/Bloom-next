@@ -20,6 +20,9 @@ html {
 .text-main-color {
   color: var(--main-color);
 }
+.text-primary-color{
+  color: var(--primary-color);
+}
 .nav-blurry-bg {
   position: relative;
 }

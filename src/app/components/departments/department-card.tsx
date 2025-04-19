@@ -28,7 +28,7 @@ export const DepartmentCard:React.FC<Props> = ({src, alt, title, describtion}) =
                 <div className="text-center overflow-hidden text-ellipsis whitespace-wrap line-clamp-3 px-2">
                     {describtion}
                 </div>
-                <button className="bg-orange-400 rounded-2xl hover:bg-orange-500 text-white font-bold py-2 px-4 mt-4 mb-2">
+                <button className="mcbg text-black rounded-2xl font-bold py-2 px-4 mt-4 mb-2">
                     <Link 
                     href={`/departments/${title.replace(/\s+/g, '-').toLowerCase()}`}
                     >
