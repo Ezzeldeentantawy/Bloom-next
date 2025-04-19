@@ -87,9 +87,9 @@ export const Navbar = () => {
                 </div>
             </div>
             <div className="fixed bottom-0 left-2 right-2 flex items-center justify-between text-black">
-                <button className="mcbg rounded-2xl text-black font-bold py-2 px-4 mt-4 mb-2">
+                <button className="mcbg rounded-2xl text-white font-bold py-2 px-4 mt-4 mb-2">
                     <Link href={"/book-now"}>
-                        book now
+                        Book Now
                     </Link>
                 </button>
                 <div className="flex items-center justify-center pe-5 gap-4">
