@@ -77,7 +77,7 @@ export const Navbar = () => {
                     <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />
                 </div>
                 <div className="flex items-center justify-center gap-4">
-                    <Image src="/nav/logo.png" alt="our logo"
+                    <Image src="/header/nav/logo.png" alt="our logo"
                     width={120}
                     height={100}
                     />
