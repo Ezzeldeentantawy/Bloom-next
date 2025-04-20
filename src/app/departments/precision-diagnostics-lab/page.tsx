@@ -40,58 +40,23 @@ export default function PrecisionDiagnosticsLab() {
                     <ul>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Comprehensive medical analysis</p>
-                            <Image
-                            src="/PDL/medical-devices.png"
-                            alt="medical analysis"
-                            className="block lg:hidden"
-                            width={30}
-                            height={30}
-                            />
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Using globally recognized devices 
                                 such as <span className="text-primary-color">Visia</span>  <span className="underline decoration-1">(USA-Made)</span>, 
                                 <span className="text-primary-color">Foto finder</span> <span className="underline decoration-1">(Germany-Made)</span>, 
                                 and <span className="text-primary-color">Oligoscan</span> <span className="underline decoration-1">(France-Made)</span>.</p>
-                            <Image
-                                src="/PDL/medical-record.png"
-                                alt="health care"
-                                className="block lg:hidden"
-                                width={30}
-                                height={30}
-                            />
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Personalized treatment plans based on precise test 
                                 results for optimal health outcomes.</p>
-                            <Image
-                                src="/PDL/herbal.png"
-                                alt="personalized treatments plans"
-                                className="block lg:hidden"
-                                width={30}
-                                height={30}
-                            />
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; <span className="text-primary-color">Unmatched accuracy</span> in diagnostics through AI-powered health assessment.</p>
-                            <Image
-                                src="/PDL/accuracy.png"
-                                alt="unmatched accuracy"
-                                className="block lg:hidden"
-                                width={30}
-                                height={30}
-                            />
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Scientifically-backed medical recommendations to enhance 
                                 well-being and overall health.</p>
-                            <Image
-                                src="/PDL/journal.png"
-                                alt="Scientifically-backed medical recommendations"
-                                className="block lg:hidden"
-                                width={30}
-                                height={30}
-                            />
                         </li>
                     </ul>
                 </div>
