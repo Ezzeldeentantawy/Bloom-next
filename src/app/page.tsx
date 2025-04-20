@@ -1,5 +1,6 @@
 import { Departments } from "./components/departments";
 import { Header } from "./components/header";
+import Head from "next/head";
 import WhyUs from "./components/whyUs";
 export const metadata ={
   title: {
@@ -9,7 +10,7 @@ export const metadata ={
 }
 export default function Home() {
   return (
-      <div className="text-center">
+    <div className="text-center font-merriweather">
         <Header />
         <span className="border-b border-white px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
         <WhyUs/>
