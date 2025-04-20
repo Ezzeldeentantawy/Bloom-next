@@ -28,7 +28,7 @@ export default function PrecisionDiagnosticsLab() {
                     <li>&bull; Precision in Diagnosis, Confidence in Treatment.</li>
                 </ul>
                 <p className="text-md sm:text-lg md:text-xl mt-4 px-2 sm:px-4 md:px-6 lg:px-10">
-                    <span className="text-primary-color">At Precision Diagnostics Lab</span>, we utilize cutting-edge <span className="underline decoration-1">
+                    <span className="text-main-color">At Precision Diagnostics Lab</span>, we utilize cutting-edge <span className="underline decoration-1">
                         AI technology and advanced medical
                         equipment</span> to provide comprehensive diagnostics and accurate assessments, 
                     helping design personalized treatment plans* tailored to each individual&#39;s unique health needs.
@@ -43,16 +43,16 @@ export default function PrecisionDiagnosticsLab() {
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Using globally recognized devices 
-                                such as <span className="text-primary-color">Visia</span>  <span className="underline decoration-1">(USA-Made)</span>, 
-                                <span className="text-primary-color">Foto finder</span> <span className="underline decoration-1">(Germany-Made)</span>, 
-                                and <span className="text-primary-color">Oligoscan</span> <span className="underline decoration-1">(France-Made)</span>.</p>
+                                such as <span className="text-main-color">Visia</span>  <span className="underline decoration-1">(USA-Made)</span>, 
+                                <span className="text-main-color">Foto finder</span> <span className="underline decoration-1">(Germany-Made)</span>, 
+                                and <span className="text-main-color">Oligoscan</span> <span className="underline decoration-1">(France-Made)</span>.</p>
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Personalized treatment plans based on precise test 
                                 results for optimal health outcomes.</p>
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
-                            <p className="me-4">&bull; <span className="text-primary-color">Unmatched accuracy</span> in diagnostics through AI-powered health assessment.</p>
+                            <p className="me-4">&bull; <span className="text-main-color">Unmatched accuracy</span> in diagnostics through AI-powered health assessment.</p>
                         </li>
                         <li className="flex items-center text-lg sm:text-xl md:text-2xl">
                             <p className="me-4">&bull; Scientifically-backed medical recommendations to enhance 
