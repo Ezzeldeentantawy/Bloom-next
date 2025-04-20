@@ -86,26 +86,26 @@ export const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
                 </div>
             </div>
-            <div className="fixed bottom-0 left-2 right-2 flex items-center justify-between text-black">
+            {/* <div className="fixed bottom-0 left-2 right-2 flex items-center justify-between text-black">
                 <button className="mcbg rounded-2xl text-white font-bold py-2 px-4 mt-4 mb-2">
                     <Link href={"/book-now"}>
                         Book Now
                     </Link>
                 </button>
-                <div className="flex items-center justify-center pe-5 gap-4">
+                <div className="flex items-center justify-center pe-5 gap-4 text-white">
                     <i aria-label="our youtube channel">
                         <FontAwesomeIcon icon={faYoutube} className="w-6 h-6 hover:text-red-600 transition duration-300" />
                     </i>
-                    <span className="border-r border-white py-4"></span>
+                    <span className="py-4"></span>
                     <i aria-label="our facebook page">
                         <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5 hover:text-blue-600 transition duration-300" />
                     </i>
-                    <span className="border-r border-white py-4"></span>
+                    <span className="py-4"></span>
                     <i aria-label="our instagram page">
                         <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 hover:text-orange-500 transition duration-300" />
                     </i>
                 </div>
-            </div>
+            </div> */}
         </nav>
     )
 }

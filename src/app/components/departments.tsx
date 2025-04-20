@@ -3,26 +3,23 @@ import { DepartmentCard } from "./departments/department-card"
 export const Departments = () => {
     return(
         <section className="mt-5 mb-5" id="departments">
-            <div>
-                <h1 className="text-4xl font-bold text-main-color text-center mb-4">
+            <div className="flex flex-col items-center justify-center">
+                <h1 className="text-4xl font-bold text-main-color mb-4">
                     Our Departments
                 </h1>
-                <p className="text-center text-white text-lg">
+                <p className="text-white text-lg mb-4">
                     Explore our wide range of departments and services designed to cater to
                 </p>
-            </div>
-            <div className="m-4 flex flex-wrap items-center justify-center gap-6">
                 <DepartmentCard
                     src="/departments-section/PDL.jpeg"
                     alt="Precision Diagnostics Lab image"
                     title="Precision Diagnostics Lab"
                     describtion={<p>
-                        At <span className="text-primary-color">Precision Diagnostics Lab</span>, we utilize cutting-edge AI technology
-                        and advanced
-                        medical equipment to provide comprehensive diagnostics and accurate
-                        assessments
+                        PreCare SmartPlan Diagnostics – Smart pre-diagnostics for an optimal treatment plan.
                     </p>}
                 />
+            </div>
+            <div className="m-4 flex flex-wrap items-center justify-center gap-6">
                 {/*---------------------------------------------------------------------------------------*/}
                 <DepartmentCard
                     src="/departments-section/DAA.jpeg"

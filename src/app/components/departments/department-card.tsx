@@ -21,20 +21,21 @@ export const DepartmentCard:React.FC<Props> = ({src, alt, title, describtion}) =
                 className="rounded-lg"
                 />
             </div>
-            <div className="text-center">
+            <div className="flex flex-col items-center justify-center">
                 <h1 className="text-2xl font-bold text-center mt-4">
                     {title}
                 </h1>
                 <div className="text-center overflow-hidden text-ellipsis whitespace-wrap line-clamp-3 px-2">
                     {describtion}
                 </div>
-                <button className="mcbg text-white rounded-2xl font-bold py-2 px-4 mt-4 mb-2">
-                    <Link 
-                    href={`/departments/${title.replace(/\s+/g, '-').toLowerCase()}`}
+                <div className="w-32 h-fit mcbg text-center text-white rounded-2xl font-bold py-2 px-4 mt-6 mb-4">
+                    <Link
+                        href={`/departments/${title.replace(/\s+/g, '-').toLowerCase()}`}
+                        className="w-full"
                     >
                         Show more...
                     </Link>
-                </button>
+                </div>
             </div>
         </div>
     )
