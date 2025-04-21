@@ -19,7 +19,7 @@ export default function PrecisionDiagnosticsLab() {
                 />
             </div>
             <div className="flex items-start flex-col">
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl text-main-color text-center">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl text-main-color text-center">
                     PreCare SmartPlan Diagnostics – Smart pre-diagnostics 
                     for an optimal treatment plan.
                 </h1>
