@@ -6,13 +6,10 @@ import { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'About Us | Your Brand',
-    description: 'Learn more about Your Brand, our mission, and our team.',
+    title: 'Best Beauty Clinic in Ras-Elkhaima | Skin, Laser, Botox & More',
+    description: 'Top-rated beauty clinic in UAE offering laser hair removal, hydrafacial, skin rejuvenation, botox, fillers, and more. Book your consultation today!',
     other: {
-      keywords: ["beauty clinic Dubai",
-    "laser hair removal UAE",
-      "hydrafacial Abu Dhabi",
-      "botox treatment", "fillers in Dubai", "skin care clinic UAE, aesthetic clinic"]
+      keywords: "beauty clinic Dubai, laser hair removal UAE, hydrafacial Abu Dhabi,botox treatment, fillers in Dubai, skin care clinic UAE, aesthetic clinic"
     }
   };
 }
