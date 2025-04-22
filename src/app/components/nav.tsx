@@ -103,7 +103,7 @@ export const Navbar = () => {
                 <li className="relative flex flex-col justify-around w-full h-full my-4">
                     <Link 
                     href="#" 
-                    className={`${pathname === "/" ? "mcbg" : "" } mx-40 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
+                    className={`${pathname === "/" ? "mcbg" : "" } mx-28 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
                     <Image 
                     src="/header/nav/home.png"
                     alt="home page"
