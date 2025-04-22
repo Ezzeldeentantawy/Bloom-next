@@ -4,15 +4,15 @@ import Head from "next/head";
 import WhyUs from "./components/whyUs";
 import { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: 'Best Beauty Clinic in Ras-Elkhaima | Skin, Laser, Botox & More',
-    description: 'Top-rated beauty clinic in UAE offering laser hair removal, hydrafacial, skin rejuvenation, botox, fillers, and more. Book your consultation today!',
-    other: {
-      keywords: "beauty clinic Dubai, laser hair removal UAE, hydrafacial Abu Dhabi,botox treatment, fillers in Dubai, skin care clinic UAE, aesthetic clinic"
-    }
-  };
-}
+export const metadata: Metadata = {
+  title: 'Best Medical Center in Ras-Elkhaima | Skin, Laser, Botox & More',
+  description: 'Top-rated beauty clinic & medical center in UAE offering laser hair removal, hydrafacial, skin rejuvenation, botox,filler and more. book you consultation today!',
+  keywords: 'Medical center, Medical center in UAE, Medical center in Ras-Elkhaima, beauty clinic, skin care',
+  openGraph: {
+    title: 'Best Medical Center in Ras-Elkhaima',
+    description: 'Top rated beauty clinic in Ras-Elkhaima. Book an appointment today.',
+  },
+};
 export default function Home() {
   return (
       <>
