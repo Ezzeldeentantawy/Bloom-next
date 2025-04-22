@@ -1,10 +1,5 @@
-import { Noto_Serif } from "next/font/google";
 import "../../globals.css";
 
-const noto = Noto_Serif({
-    weight: '400',
-    subsets: ['latin'],
-})
 
     export const metadata = {
     title: {
