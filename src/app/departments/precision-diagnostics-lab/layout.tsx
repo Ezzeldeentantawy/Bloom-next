@@ -50,12 +50,6 @@ const noto = Noto_Serif({
     children: React.ReactNode;
     }>) {
     return (
-        <html lang="en">
-        <body
-            className={`${noto.className} ocbg antialiased`}
-        >
-            {children}
-        </body>
-        </html>
+        <section>{children}</section>
     );
     }
