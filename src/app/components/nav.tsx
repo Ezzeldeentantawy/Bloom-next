@@ -93,7 +93,7 @@ export const Navbar = () => {
                 </button>
             </div>
             {open && 
-            <ul className="fixed h-screen mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden py-5">
+            <ul className="fixed h-full mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden">
                 <button
                 className="text-4xl sm:text-6xl text-start m-4"
                 onClick={() => setOpen(false)}
