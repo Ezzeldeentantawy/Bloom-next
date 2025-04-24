@@ -1,13 +1,13 @@
-'use client';
+    'use client';
 
-import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    import Image from 'next/image';
+    import React, { useEffect, useRef } from 'react';
+    import Link from 'next/link';
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
 
     interface Props {
     src: string;
@@ -24,26 +24,27 @@ gsap.registerPlugin(ScrollTrigger);
     const titleRef = useRef<HTMLHeadingElement | null>(null);
     const descRef = useRef<HTMLDivElement | null>(null);
     const buttonRef = useRef<HTMLDivElement | null>(null);
+    const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
     useEffect(() => {
         // Ensure refs are available
-        if (!cardRef.current || !overlayRef.current || !imageRef.current || !titleRef.current || !descRef.current || !buttonRef.current) return;
+        if (
+        !cardRef.current ||
+        !overlayRef.current ||
+        !imageRef.current ||
+        !titleRef.current ||
+        !descRef.current ||
+        !buttonRef.current
+        )
+        return;
 
-        // Set initial state for image (hidden behind overlay)
+        // Set initial states
+        gsap.set(overlayRef.current, { y: 0 });
         gsap.set(imageRef.current, { opacity: 0 });
+        gsap.set([titleRef.current, descRef.current, buttonRef.current], { y: -50, opacity: 0 });
 
-        // Create timeline for sequential animations
-        const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: cardRef.current,
-            start: 'top 85%', 
-            end: 'bottom 15%',
-            toggleActions: 'play none none reset', // Play on enter, reset on leave
-        },
-        });
-
-        // Add animations to timeline
-        tl
+        // Create timeline
+        timelineRef.current = gsap.timeline({ paused: true })
         // Slide down beige overlay to reveal image
         .to(overlayRef.current, {
             y: '100%',
@@ -51,35 +52,63 @@ gsap.registerPlugin(ScrollTrigger);
             ease: 'power2.out',
         })
         // Fade in image
-        .to(imageRef.current, {
+        .to(
+            imageRef.current,
+            {
             opacity: 1,
             duration: 0.5,
             ease: 'power2.out',
-        }, '-=0.8') // Overlap with overlay
+            },
+            '-=0.8'
+        )
         // Slide in title
-        .fromTo(
+        .to(
             titleRef.current,
-            { y: -50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' },
+            {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power2.out',
+            },
             '-=0.4'
         )
         // Slide in description
-        .fromTo(
+        .to(
             descRef.current,
-            { y: -50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' },
+            {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power2.out',
+            },
             '-=0.4'
         )
         // Slide in button
-        .fromTo(
+        .to(
             buttonRef.current,
-            { y: -50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' },
+            {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power2.out',
+            },
             '-=0.4'
         );
 
-        // Clean up ScrollTrigger on unmount
+        // ScrollTrigger to control animation
+        ScrollTrigger.create({
+        trigger: cardRef.current,
+        start: 'top 85%', // Trigger when card's top is 85% from viewport top
+        end: 'bottom 20%', // End when card's bottom is 20% from viewport top
+        onEnter: () => timelineRef.current?.restart(), // Play on scroll down
+        onEnterBack: () => timelineRef.current?.restart(), // Play on scroll up
+        onLeave: () => timelineRef.current?.progress(0).pause(), // Reset when leaving downward
+        onLeaveBack: () => timelineRef.current?.progress(0).pause(), // Reset when leaving upward
+        });
+
+        // Clean up ScrollTrigger and timeline on unmount
         return () => {
+        timelineRef.current?.kill();
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         };
     }, []);
