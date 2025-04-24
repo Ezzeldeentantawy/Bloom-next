@@ -8,14 +8,33 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import gsap from "gsap";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false); 
+    const nav = useRef<HTMLDivElement>(null);
+    const mobileNav = useRef<HTMLUListElement>(null);
+
+    useEffect(() => {
+        gsap.fromTo(
+            nav.current,
+            {y:-100, opacity:0},
+            {y:0, opacity:1, duration:1}
+        );
+        if(open === true){
+            gsap.fromTo(
+                mobileNav.current,
+                {x:-100, opacity:0},
+                {x:0, opacity:1, duration:1},
+            )
+        }
+    })
+
     const pathname = usePathname();
     return(
-        <nav className="relative nav-blurry-bg text-white z-10">
+        <nav ref={nav} className="relative nav-blurry-bg text-white z-10">
             <div className="hidden lg:flex justify-between items-center border-b border-white">
                 <div className="flex items-center justify-center gap-4">
                     <div className="flex items-center text-sm p-1 ps-2">
@@ -93,7 +112,7 @@ export const Navbar = () => {
                 </button>
             </div>
             {open && 
-            <ul className="fixed h-full mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden">
+            <ul ref={mobileNav} className="fixed h-full mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden">
                 <button
                 className="text-4xl sm:text-6xl text-start m-4"
                 onClick={() => setOpen(false)}

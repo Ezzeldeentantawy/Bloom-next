@@ -1,7 +1,7 @@
 import { Departments } from "./components/departments";
 import { Header } from "./components/header";
 import Head from "next/head";
-import WhyUs from "./components/whyUs";
+import { WhyUs } from "./components/whyUs";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
