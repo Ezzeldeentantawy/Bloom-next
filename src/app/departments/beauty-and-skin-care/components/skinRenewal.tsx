@@ -21,7 +21,7 @@ export const SkinRenewal = () => {
                 &bull; Skin Renewal & Microneedling Treatments
             </h1>
             <h3 className="ps-4 text-white text-md sm:text-lg lg:text-xl">
-                Experience revolutionary skin transformation with our Skin Renewal & Microneedling Treatments! This collagen-inducing therapy uses ultra-fine needles to create micro-channels, triggering your skin's natural healing process for dramatic rejuvenation.
+                Experience revolutionary skin transformation with our Skin Renewal & Microneedling Treatments! This collagen-inducing therapy uses ultra-fine needles to create micro-channels, triggering your skin&#39;s natural healing process for dramatic rejuvenation.
             </h3>
             <button 
             onClick={() => setIsShow(!isShow)}
