@@ -121,7 +121,7 @@
         <div className="relative">
             {/* Beige overlay */}
             <div
-            className="absolute inset-0 bg-beige z-10"
+            className="z-10"
             ref={overlayRef}
             ></div>
             <Image
@@ -148,14 +148,19 @@
             {describtion}
             </div>
             <div
-            className="w-32 h-fit mcbg text-center text-white rounded-2xl font-bold py-2 px-4 mt-6 mb-4"
+            className="w-32 py-2 flex items-center justify-center mt-2 mb-2"
             ref={buttonRef}
             >
             <Link
                 href={`/ departments / ${ title.replace(/\s+/g, '-').toLowerCase() } `}
-                className="w-full"
             >
-                Show more...
+                <Image
+                src="/departments-section/right.png"
+                alt='show more'
+                className='w-16 sm:w-20'
+                width={256}
+                height={256}
+                />
             </Link>
             </div>
         </div>
