@@ -34,7 +34,8 @@ export const Navbar = () => {
 
     const pathname = usePathname();
     return(
-        <nav ref={nav} className="relative nav-blurry-bg text-white z-10">
+    <>
+        <nav ref={nav} className="block nav-blurry-bg text-white z-10">
             <div className="hidden lg:flex justify-between items-center border-b border-white">
                 <div className="flex items-center justify-center gap-4">
                     <div className="flex items-center text-sm p-1 ps-2">
@@ -106,16 +107,24 @@ export const Navbar = () => {
                     />
                 </div>
                 <button 
-                onClick={() => setOpen(!open)}
+                onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(!open);
+                }
+                }
                 className="flex items-center justify-center gap-4">
                     <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
                 </button>
             </div>
+        </nav>
             {open && 
-            <ul ref={mobileNav} className="fixed h-full mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden">
+            <ul ref={mobileNav} className="h-full text-white mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden z-30">
                 <button
                 className="text-4xl sm:text-6xl text-start m-4"
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(false);
+                }}
                 >
                         ×
                 </button>
@@ -192,7 +201,7 @@ export const Navbar = () => {
                 </li>
             </ul>
             }
-        </nav>
+    </>
     )
 }
 {/* <div className="fixed bottom-0 left-2 right-2 flex items-center justify-between text-black">

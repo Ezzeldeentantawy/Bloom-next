@@ -7,21 +7,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export const WhyUs = () => {
-    // Refs for cards and their SVGs
-    const cardRefs = useRef<HTMLDivElement[]>([]);
+    // Refs with TypeScript types
+    const sectionRef = useRef<HTMLElement | null>(null);
     const svgRefs = useRef<SVGSVGElement[]>([]);
-    const container = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         // Ensure refs are available
-        if (cardRefs.current.length === 0 || svgRefs.current.length === 0) return;
+        if (!sectionRef.current || svgRefs.current.length === 0) return;
 
-        // Set up animations for each card
-        cardRefs.current.forEach((card, index) => {
-            const svg = svgRefs.current[index];
+        // Set initial stroke properties for drawing effect
+        svgRefs.current.forEach((svg) => {
             const paths = svg.querySelectorAll('path');
-
-            // Set initial stroke properties for drawing effect
             paths.forEach((path: SVGPathElement) => {
                 const length = path.getTotalLength();
                 gsap.set(path, {
@@ -29,44 +25,41 @@ export const WhyUs = () => {
                     strokeDashoffset: length,
                 });
             });
+        });
 
-            // Animate SVG paths when card enters viewport
+        // Animate each SVG's paths with stagger
+        svgRefs.current.forEach((svg, index) => {
+            const paths = svg.querySelectorAll('path');
             gsap.to(paths, {
                 strokeDashoffset: 0,
-                duration: 1.2, // Slightly faster for mobile
+                duration: 1.5,
                 ease: 'power2.out',
-                stagger: 0.2, // Stagger paths within SVG
+                stagger: 0.3, // Stagger paths within each SVG
+                delay: index * 0.6, // Stagger SVGs
                 scrollTrigger: {
-                    trigger: card,
-                    start: 'top 85%', // Trigger when card's top is 85% from viewport top
+                    trigger: sectionRef.current,
+                    start: 'top 80%', // Start when top of section is 80% from top of viewport
                     toggleActions: 'play none none reset', // Play on enter, reset on leave
                 },
             });
-            gsap.fromTo(
-                container.current,
-                {y:-100, opacity:0},
-                {y:0, opacity:1, duration:1,
-                    scrollTrigger:{
-                        trigger: card,
-                        start: 'top 85%', // Trigger when card's top is 85% from viewport top
-                        toggleActions: 'play none none reset',
-                    }
-                },
-            )
         });
+        gsap.fromTo(
+            sectionRef.current,
+            { y: -100, opacity: 0 },
+            {
+                y: 0, opacity: 1, duration: 1,
+                scrollTrigger: {
+                    start: 'top 85%', // Trigger when card's top is 85% from viewport top
+                    toggleActions: 'play none none reset',
+                }
+            },
+        )
 
         // Clean up ScrollTrigger on component unmount
         return () => {
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         };
     }, []);
-
-    // Helper to assign refs to cards
-    const addToCardRefs = (el: HTMLDivElement | null) => {
-        if (el && !cardRefs.current.includes(el)) {
-            cardRefs.current.push(el);
-        }
-    };
 
     // Helper to assign refs to SVGs
     const addToSvgRefs = (el: SVGSVGElement | null) => {
@@ -76,7 +69,11 @@ export const WhyUs = () => {
     };
 
     return (
-        <section ref={container} className="why-shadow py-12 px-6 md:px-20 my-5" id="Whyus">
+        <section
+            className="why-shadow py-12 px-6 md:px-20 my-5"
+            id="Whyus"
+            ref={sectionRef}
+        >
             <div className="text-center mb-10">
                 <h2 className="text-3xl font-bold text-main-color">Why Choose Us?</h2>
                 <p className="text-white mt-2">Discover what sets our beauty clinic apart</p>
@@ -84,7 +81,7 @@ export const WhyUs = () => {
 
             <div className="grid md:grid-cols-3 gap-8 text-center">
                 {/* Expertise */}
-                <div className="flex flex-col items-center" ref={addToCardRefs}>
+                <div className="flex flex-col items-center">
                     <svg
                         className="w-12 h-12 text-red-500 mb-4"
                         fill="none"
@@ -104,7 +101,7 @@ export const WhyUs = () => {
                 </div>
 
                 {/* Technology */}
-                <div className="flex flex-col items-center" ref={addToCardRefs}>
+                <div className="flex flex-col items-center">
                     <svg
                         className="w-12 h-12 text-red-500 mb-4"
                         fill="none"
@@ -123,7 +120,7 @@ export const WhyUs = () => {
                 </div>
 
                 {/* Personalized Care */}
-                <div className="flex flex-col items-center" ref={addToCardRefs}>
+                <div className="flex flex-col items-center">
                     <svg
                         className="w-12 h-12 text-red-500 mb-4"
                         fill="none"
