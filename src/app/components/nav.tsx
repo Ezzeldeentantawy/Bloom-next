@@ -20,7 +20,7 @@ export const Navbar = () => {
     useEffect(() => {
         gsap.fromTo(
             nav.current,
-            {y:-100, opacity:0},
+            {y:100, opacity:0},
             {y:0, opacity:1, duration:1}
         );
         const tl = gsap.timeline();

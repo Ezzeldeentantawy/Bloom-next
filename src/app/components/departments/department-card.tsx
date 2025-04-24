@@ -36,7 +36,8 @@ gsap.registerPlugin(ScrollTrigger);
         const tl = gsap.timeline({
         scrollTrigger: {
             trigger: cardRef.current,
-            start: 'top 85%', // Trigger when card's top is 85% from viewport top
+            start: 'top 85%', 
+            end: 'bottom 15%',
             toggleActions: 'play none none reset', // Play on enter, reset on leave
         },
         });
