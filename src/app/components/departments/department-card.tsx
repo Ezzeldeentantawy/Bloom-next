@@ -152,7 +152,7 @@
             ref={buttonRef}
             >
             <Link
-                href={`/ departments / ${ title.replace(/\s+/g, '-').toLowerCase() } `}
+                href={`/departments/${ title.replace(/\s+/g, '-').toLowerCase() } `}
             >
                 <Image
                 src="/departments-section/right.png"
