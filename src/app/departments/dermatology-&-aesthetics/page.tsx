@@ -2,6 +2,8 @@ import { FaceContouring } from "./components/faceContouring"
 import { Header } from "./components/header"
 import { Injectables } from "./components/injectables"
 import { MedicalDermatology } from "./components/medicalDermatology"
+import { Departments } from "./components/otherDepartments"
+import { PrecisionDignosticsLab } from "./components/precisionPart"
 import { SkinRejuventation } from "./components/skinRejuvenation"
 
 export const metadata = {
@@ -22,6 +24,8 @@ export default function DermatologyAndAesthetics() {
             <SkinRejuventation/>
             <FaceContouring/>
             <MedicalDermatology />
+            <PrecisionDignosticsLab/>
+            <Departments/>
         </div>
     )
 }

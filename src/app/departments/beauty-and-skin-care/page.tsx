@@ -1,7 +1,16 @@
-import { Cleansing } from "./components/cleansing"
-import { Header } from "./components/header"
-import { ProfessionalFacials } from "./components/proFacial"
-import { SpecializedTreatments } from "./components/SpecializedTreatments"
+import { ChemicalPeels } from "./components/chemicalPeels";
+import { Cleansing } from "./components/cleansing";
+import { FaceAndNeckTightening } from "./components/face&neckTightening";
+import { Header } from "./components/header";
+import { Departments } from "./components/otherDepartments";
+import { PrecisionDignosticsLab } from "./components/precisionPart";
+import { ProfessionalFacials } from "./components/proFacial";
+import { RejuvenationFacial } from "./components/rejuvenation";
+import { SkinBrightening } from "./components/skinBrightening";
+import { SkinRenewal } from "./components/skinRenewal";
+import { SpecializedTreatments } from "./components/SpecializedTreatments";
+import { SpecialPeels } from "./components/specialPeels";
+import { SpecialTreatments } from "./components/specialTreatments";
 
 export const metadata = {
     title: {
@@ -17,6 +26,15 @@ export default function DermatologyAndAesthetics() {
             <SpecializedTreatments/>
             <Cleansing/>
             <ProfessionalFacials/>
+            <RejuvenationFacial/>
+            <FaceAndNeckTightening/>
+            <SpecialTreatments/>
+            <SkinRenewal/>
+            <ChemicalPeels/>
+            <SkinBrightening/>
+            <SpecialPeels/>
+            <PrecisionDignosticsLab/>
+            <Departments/>
         </div>
     )
 }
