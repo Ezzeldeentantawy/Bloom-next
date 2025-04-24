@@ -23,12 +23,19 @@ export const Navbar = () => {
             {y:-100, opacity:0},
             {y:0, opacity:1, duration:1}
         );
+        const tl = gsap.timeline();
         if(open === true){
             gsap.fromTo(
                 mobileNav.current,
                 {x:100, opacity:0},
                 {x:0, opacity:1, duration:1},
-            )
+            );
+            tl.fromTo("#element1", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: .3, delay: .5, ease: "back.in" })
+                .fromTo("#element2", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: .3, delay: .001, ease: "back.in" })
+                .fromTo("#element3", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: .3, delay: .001, ease: "back.in" })
+                .fromTo("#element4", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: .3, delay: .001, ease: "back.in" })
+                .fromTo("#element5", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: .3, delay: .001, ease: "back.in" })
+                .fromTo("#element6", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: .3, delay: .001, ease: "back.in" })
         }else{
             gsap.fromTo(
                 mobileNav.current,
@@ -135,7 +142,7 @@ export const Navbar = () => {
                         ×
                 </button>
                 <li className="relative flex flex-col justify-around w-full h-full my-4">
-                    <Link 
+                    <Link id="element1" 
                     href="#" 
                     className={`${pathname === "/" ? "mcbg" : "" } mx-28 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
                     <Image 
@@ -148,7 +155,7 @@ export const Navbar = () => {
                     Home
                     </Link>
                     <span className="border-b border-white py-3"></span>
-                        <Link href="/#Whyus" className=" flex items-center justify-center text-md hover:text-red-500">
+                        <Link id="element2" href="/#Whyus" className=" flex items-center justify-center text-md hover:text-red-500">
                     <Image
                         src="/header/nav/help.png"
                         alt="home page"
@@ -159,7 +166,7 @@ export const Navbar = () => {
                     Why us?
                     </Link>
                     <span className="border-b border-white py-3"></span>
-                    <Link
+                    <Link id="element3"
                         href="/#departments"
                             className="text-md flex items-center justify-center hover:text-red-500">
                             <Image
@@ -172,7 +179,7 @@ export const Navbar = () => {
                         Departments
                     </Link>
                     <span className="border-b border-white py-3"></span>
-                        <Link href="#" className="text-md flex items-center justify-center hover:text-red-500">
+                        <Link id="element4" href="#" className="text-md flex items-center justify-center hover:text-red-500">
                             <Image
                                 src="/header/nav/experts.png"
                                 alt="home page"
@@ -183,7 +190,7 @@ export const Navbar = () => {
                     Experts
                     </Link>
                         <span className="border-b border-white py-3"></span>
-                        <Link href="#" className="text-md flex items-center justify-center hover:text-red-500">
+                        <Link id="element5" href="#" className="text-md flex items-center justify-center hover:text-red-500">
                             <Image
                                 src="/header/nav/contact.png"
                                 alt="home page"
@@ -194,7 +201,7 @@ export const Navbar = () => {
                     Contact
                     </Link>
                     <span className="border-b  border-white py-3"></span>
-                        <Link href="#" className="text-md flex items-center justify-center hover:text-red-500">
+                        <Link id="element6" href="#" className="text-md flex items-center justify-center hover:text-red-500">
                             <Image
                                 src="/header/nav/booking.png"
                                 alt="home page"
