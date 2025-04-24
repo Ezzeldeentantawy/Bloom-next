@@ -46,7 +46,7 @@ export const Departments = () => {
                 <DepartmentCard
                     src="/departments-section/LAHR.jpeg"
                     alt="Laser hair removal and laser treatment"
-                    title="Laser hair removal and laser treatment"
+                    title="Laser hair removal"
                     describtion={<p>
                         Our {" "}
                         <span className="text-primary-color">
