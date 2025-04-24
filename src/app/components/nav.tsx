@@ -26,8 +26,14 @@ export const Navbar = () => {
         if(open === true){
             gsap.fromTo(
                 mobileNav.current,
-                {x:-100, opacity:0},
+                {x:100, opacity:0},
                 {x:0, opacity:1, duration:1},
+            )
+        }else{
+            gsap.fromTo(
+                mobileNav.current,
+                { x: 0, opacity: 1 },
+                { x: 100, opacity: 0, duration: 1 },
             )
         }
     })
