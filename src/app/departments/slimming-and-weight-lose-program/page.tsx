@@ -5,9 +5,9 @@ import { PrecisionDignosticsLab } from "./components/precisionPart"
 
 export const metadata = {
     title: {
-        absolute: 'Dermatology & Aesthetics Department | Enhancing Skin Health and Beauty with Expert Care'
+        absolute: 'Effective Slimming & Weight Loss Program | Get Fit & Healthy Fast!'
     },
-    description: "Expert dermatology and aesthetic care including acne treatment, anti-aging, laser therapy, and skincare solutions to help you look and feel your best.",
+    description: "Transform your body with our proven slimming & weight loss program! Burn fat, boost metabolism, and achieve lasting results. Start your journey today!",
 }
 
 export default function DermatologyAndAesthetics() {

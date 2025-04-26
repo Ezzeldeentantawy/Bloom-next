@@ -5,9 +5,9 @@ import { PrecisionDignosticsLab } from "./components/precisionPart"
 
 export const metadata = {
     title: {
-        absolute: 'Dermatology & Aesthetics Department | Enhancing Skin Health and Beauty with Expert Care'
+        absolute: 'Premium IV Drip Therapy | Boost Energy, Hydration & Wellness'
     },
-    description: "Expert dermatology and aesthetic care including acne treatment, anti-aging, laser therapy, and skincare solutions to help you look and feel your best.",
+    description: "Revitalize your body with our medical-grade IV drip therapy! Combat fatigue, enhance immunity & accelerate recovery. Certified clinicians | Book now!",
 }
 
 export default function DermatologyAndAesthetics() {

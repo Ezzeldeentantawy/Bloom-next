@@ -5,9 +5,9 @@ import { PrecisionDignosticsLab } from "./components/precisionPart"
 
 export const metadata = {
     title: {
-        absolute: 'Dermatology & Aesthetics Department | Enhancing Skin Health and Beauty with Expert Care'
+        absolute: 'Best Dental Care & Treatments | Expert Dentists Near You'
     },
-    description: "Expert dermatology and aesthetic care including acne treatment, anti-aging, laser therapy, and skincare solutions to help you look and feel your best.",
+    description: "Get top-quality dental care! Our expert dentists offer teeth whitening, implants, braces & pain-free treatments. Book your appointment today for a brighter smile!",
 }
 
 export default function DermatologyAndAesthetics() {

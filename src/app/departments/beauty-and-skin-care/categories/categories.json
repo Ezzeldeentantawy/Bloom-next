@@ -1,0 +1,122 @@
+[
+    {
+        "department": "beauty and skin care",
+        "title": "Chemical Peels",
+        "description": "Transform dull, damaged skin with our professional Chemical Peels – the ultimate resurfacing treatment for a fresher, more youthful complexion.",
+        "items": [
+            "TCA",
+            "Glycolic Acid",
+            "Lactic Acid",
+            "Salicylic Acid",
+            "Syntha C (Vitamin C)"
+        ]
+    },
+    {
+        "department": "beauty and skin care",
+        "title": "Deep Cleansing & Revitalization",
+        "description": "Indulge in our ultimate skin detox! This intensive treatment goes beyond surface-level cleansing, using advanced exfoliation, steam extraction, and deep-pore purification to remove impurities, excess oil, and dead skin cells.",
+        "items": [
+        "Deep Cleansing Facial",
+        "Oxygen Lift Facial",
+        "Micro Dermabrasion",
+        "Derma planinig",
+        "Spectra Carbon Peel"
+        ]
+    },
+    {
+        "department": "beauty and skin care",
+        "title": "Face and Neck Tightening",
+        "description": "Say goodbye to sagging skin with our advanced Face & Neck Tightening treatments! Using cutting-edge technologies like radiofrequency, microcurrent, or ultrasound therapy, we stimulate collagen production to naturally lift and contour your jawline, cheeks, and neck.",
+        "items": [
+            "EMFACE",
+            "plus RF Fractional",
+            "Exion RF Face Contouring",
+            "Eximia face",
+            "HEBE Face"
+        ]
+    },
+    {
+        "department": "beauty and skin care",
+        "title": "Professional Facials",
+        "description": "Experience customized skincare with our Professional Facials, designed by licensed estheticians to target your unique concerns.",
+        "items": [
+        "HydraFacial MD",
+        "AquaGold Facial",
+        "OxyGeneo Facial",
+        "AnteAGE Exosomes Facial",
+        "Stem Cell Infusion Facial",
+        "Fire and Ice Facial"
+        ]
+    },
+    {
+        "department": "beauty and skin care",
+        "title": "Specialized Facial Treatments",
+        "description": "Discover customized skincare solutions tailored to your unique needs! Our Specialized Facial Treatments target concerns like acne, aging, hyperpigmentation, and dehydration with advanced techniques and premium products.",
+        "items": [
+        "Deep Cleansing & Revitalization",
+        "Professional Facials",
+        "Rejuvenation Facials"
+        ]
+    },
+    {
+        "department":"beauty and skin care",
+        "title": "Rejuvenation Facial",
+        "description": "Experience the ultimate skin revival with our Rejuvenation Facial treatments. Using advanced techniques and premium products, we restore your skin's natural radiance and youthful appearance.",
+        "items": [
+            "Hydrating Facial",
+            "Anti-aging Treatment",
+            "Brightening Facial",
+            "Collagen Boost Therapy",
+            "Vitamin C Infusion"
+        ]
+    },
+    {
+        "department":"beauty and skin care",
+        "title": "Special Treatments",
+        "description": "Our specialized treatments target specific skin concerns with precision and effectiveness, delivering remarkable results.",
+        "items": [
+            "LED Light Therapy",
+            "Ultrasonic Skin Scrubbing",
+            "Microcurrent Facial",
+            "High-Frequency Treatment",
+            "Oxygen Infusion"
+        ]
+    },
+    {
+        "department":"beauty and skin care",
+        "title": "Skin Renewal",
+        "description": "Transform your skin with our innovative renewal treatments that promote cell turnover and skin regeneration.",
+        "items": [
+            "Chemical Peels",
+            "Microdermabrasion",
+            "Enzyme Treatment",
+            "Dermaplaning",
+            "Retinol Treatment"
+        ]
+    },
+    {
+        "department": "beauty and skin care",
+        "title": "Skin Brightening",
+        "description": "Achieve a radiant, even-toned complexion with our targeted brightening treatments.",
+        "items": [
+            "Vitamin C Treatment",
+            "Alpha Arbutin Therapy",
+            "Kojic Acid Treatment",
+            "Glutathione Infusion",
+            "Dark Spot Correction"
+        ]
+    },
+    {
+        "department": "beauty and skin care",
+        "title": "Special Peels",
+        "description": "Advanced chemical peeling treatments designed to address various skin concerns and promote skin renewal.",
+        "items": [
+            "Glycolic Peel",
+            "Salicylic Peel",
+            "TCA Peel",
+            "Jessner Peel",
+            "Mandelic Peel"
+        ]
+    }
+    
+]

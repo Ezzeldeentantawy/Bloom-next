@@ -1,0 +1,98 @@
+[
+    {
+        "department": "dermatology-&-aesthetics",
+        "title": "Injectables",
+        "description": "There are different kinds of cosmetic injectables, such as dermal fillers for adding volume and smoothing wrinkles, and Botox for relaxing facial muscles to reduce the appearance of fine lines.",
+        "items": [
+            "Botox",
+            "Lip Filler",
+            "Chin Fillers",
+            "Jawline Fillers",
+            "Nose Fillers",
+            "Cheek Fillers",
+            "Sculptra Fillers",
+            "Profhilo Bioremodelling",
+            "PRF For Hair",
+            "PRF For Face",
+            "Exosome For Face",
+            "Exosomes For Hair",
+            "Skin Boosters",
+            "Bio Revitalisation",
+            "Mesotherapy",
+            "Hyper Pigmentation Injectables",
+            "Acne Scars Injectables",
+            "Collagen Skin Injectables",
+            "Mesotherapy For Hair",
+            "Growth Factor",
+            "Hair Stem Cycle",
+            "Fat-Dissolving Injections",
+            "Threadlift Nose",
+            "Threadlift Face",
+            "Threadlift Eyes"
+        ]
+    },
+    {
+        "department": "dermatology-&-aesthetics",
+        "title": "Skin Rejuvenation",
+        "description": "Skin Rejuvenation treatments are designed to restore a youthful, radiant appearance by targeting various signs of aging and skin damage.",
+        "items": [
+            "Carbon Peel (Hollywood Facial)",
+            "Glow Forma",
+            "Spectra Skin Rejuvenation",
+            "AnteAge Exosomes Facial",
+            "Spectra Hair Bleaching",
+            "Spectra Hollywood Facial",
+            "BBL Hero",
+            "BBL Joule",
+            "BBL Forever Young",
+            "MOXI Laser Treatment",
+            "SkinPen Microneedling",
+            "Dermapen Mesofacial",
+            "PCA SKIN",
+            "Cosmelan",
+            "DMK Enzyme Therapy Facial",
+            "Stem Cell Infusion Facial",
+            "INFINI Microneedling"
+        ]
+    },
+    {
+        "department": "dermatology-&-aesthetics",
+        "title": "Face Contouring",
+        "description": "Welcome to our Face Contouring Department, where precision meets artistry to enhance your natural beauty! Our expert team specializes in advanced facial sculpting techniques, using non-surgical and minimally invasive procedures to define, reshape, and rejuvenate your facial features.",
+        "items": [
+            "Exion Face RF",
+            "4 plus",
+            "Advalight",
+            "Eximia Face",
+            "HEBE Face",
+            "M shape"
+        ]
+    },
+    {
+        "department": "dermatology-&-aesthetics",
+        "title": "Medical Dermatology (Clinical Skinderm) & Aesthetic",
+        "description": "Skin Rejuvenation treatments are designed to restore a youthful, radiant appearance by targeting various signs of aging and skin damage.",
+        "items": [
+            "Skin Tag Removal",
+            "Wart Removal",
+            "BENIGN VASCULAR LESIONS",
+            "Mole Removal",
+            "Tattoo Removal",
+            "Naturapeel",
+            "Pseudo folliculitis Barbae (BFB)",
+            "Elimination of epidermal pigmentations",
+            "Vascular anomalies",
+            "Removal of age spots and freckles",
+            "Removal of facial and leg veins",
+            "Hemangioma",
+            "Rosacea",
+            "Skin tightening and wrinklereducation",
+            "Superficial pigmented lesions",
+            "Active Acne",
+            "SPIDER ANGIOMA",
+            "sun and age spots",
+            "Skin ablation",
+            "Full skin resurfacin"
+        ]
+    }
+]

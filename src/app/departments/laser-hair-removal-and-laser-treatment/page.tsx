@@ -1,5 +1,4 @@
-import { Duetto } from "./components/Duetto"
-import { GentleMaxPro } from "./components/gentleMax"
+import { Categories } from "./categories/categories"
 import { Header } from "./components/header"
 import { Departments } from "./components/otherDepartments"
 import { PrecisionDignosticsLab } from "./components/precisionPart"
@@ -18,8 +17,7 @@ export default function DermatologyAndAesthetics() {
             <div className="text-center">
                 <span className="px-24 sm:px32 md:px-48 lg:px-64 border-b border-white"></span>
             </div>
-            <GentleMaxPro/>
-            <Duetto/>
+            <Categories/>
             <PrecisionDignosticsLab/>
             <Departments/>
         </div>

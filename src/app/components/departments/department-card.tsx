@@ -115,7 +115,7 @@
 
     return (
         <div
-        className="flex items-center justify-center flex-col min-w-80 w-96 bg-white pt-2 shadow-lg rounded-2xl relative"
+        className="flex items-center justify-center flex-col min-w-92 max-w-96 bg-white pt-2 shadow-lg rounded-2xl relative"
         ref={cardRef}
         >
         <div className="relative">
@@ -152,7 +152,7 @@
             ref={buttonRef}
             >
             <Link
-                href={`/departments/${ title.replace(/\s+/g, '-').toLowerCase() } `}
+                href={`/departments/${title.replace(/\s+/g, '-').toLowerCase()}`}
             >
                 <Image
                 src="/departments-section/right.png"

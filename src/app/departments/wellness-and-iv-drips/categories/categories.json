@@ -1,0 +1,60 @@
+[
+{
+    "title": "Wellness and IV Drips",
+    "description": "Rejuvenate with our holistic wellness and IV drips program. Achieve optimal health through functional consultation, testing, and tailored therapies to nurture mind, body, and soul for lasting balance.",
+    "items": [
+        "Functional Consultation and Testing",
+        "Holistic Wellness Offerings"
+    ]
+},
+{
+    "title": "IV Drip",
+    "description": "Elevate your health with IV drip therapy. From immune boost and skin glowing IV to NAD and vitamin C IV, our treatments support energy, detox, and wellness. Discover tailored solutions for vitality.",
+    "items": [
+        "Hair Generate IV",
+        "Multivitamin IV",
+        "Immune Boost",
+        "Energy Boost",
+        "NAD IVS",
+        "Skin Glowing IV",
+        "Anti Stress IV",
+        "Cardio Support",
+        "Liver Detox",
+        "Memory Boost",
+        "Female Balance",
+        "Male Energy Plus",
+        "Vitamin C IV",
+        "Glutathione IV"
+    ]
+},
+{
+    "title": "Wellness Massage",
+    "description": "Relax and recover with our wellness massage services. From deep tissue and lymphatic drainage to aromatherapy and cupping massage, enjoy tailored therapies for stress relief and physical restoration.",
+    "items": [
+        "Deep Tissue Release",
+        "Mobilization And Stretching",
+        "Post-Surgery Therapy",
+        "Trigger Point Release",
+        "Swedish Massage",
+        "Deep Tissue Massage",
+        "Hot Stone Massage",
+        "Aromatherapy Massage",
+        "Sports Massage",
+        "Lymphatic Drainage Massage",
+        "Cupping Massage",
+        "Ayurvedic Massage",
+        "Bamboo Massage",
+        "Relaxation Massage",
+        "Madero Therapy Massage"
+    ]
+},
+{
+    "title": "Spinal Decompression",
+    "description": "Relieve spinal pain with our spinal decompression therapy. Targeting herniated discs, sciatica, and spinal stenosis, this treatment reduces pressure for improved mobility and lasting comfort.",
+    "items": [
+        "Herniated Discs",
+        "Sciatica",
+        "Spinal Stenosis"
+    ]
+}
+]

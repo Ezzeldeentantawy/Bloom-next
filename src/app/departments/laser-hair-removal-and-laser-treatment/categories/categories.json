@@ -1,0 +1,81 @@
+[
+    {
+        "department": "laser-hair-removal",
+        "title": "Chrome Technology",
+        "description": "Experience cutting-edge laser hair removal with our Chrome technology. This advanced system offers precise, comfortable, and effective hair reduction for all skin types.",
+        "items": [
+            "Full Body (Female)",
+            "Full Body (Male)",
+            "Full Face",
+            "Full Legs",
+            "Full Arms",
+            "Bikini Line",
+            "Brazilian",
+            "Underarms",
+            "Back",
+            "Chest"
+        ]
+    },
+    {
+        "department": "laser-hair-removal",
+        "title": "Duetto Technology",
+        "description": "Our Duetto laser system combines two wavelengths for optimal hair removal results, suitable for all skin types and hair colors.",
+        "items": [
+            "Full Body Treatment",
+            "Face & Neck",
+            "Upper & Lower Legs",
+            "Full Arms Treatment",
+            "Extended Bikini",
+            "Brazilian Area",
+            "Underarm Region",
+            "Back Treatment",
+            "Chest Area"
+        ]
+    },
+    {
+        "department": "laser-hair-removal",
+        "title": "GentleMax Pro",
+        "description": "The GentleMax Pro delivers powerful yet gentle laser hair removal, combining two fast and effective laser technologies for optimal results across all skin types.",
+        "items": [
+            "Complete Body Package",
+            "Facial Hair Removal",
+            "Leg Hair Removal",
+            "Arm Hair Treatment",
+            "Bikini Area",
+            "Full Brazilian",
+            "Underarm Treatment",
+            "Back Hair Removal",
+            "Chest Hair Removal"
+        ]
+    },
+    {
+        "department": "laser-hair-removal",
+        "title": "Specialized Laser Treatments",
+        "description": "Advanced laser treatments for specific skin concerns and aesthetic enhancement, using state-of-the-art technology for optimal results.",
+        "items": [
+            "Pigmentation Treatment",
+            "Vascular Lesion Removal",
+            "Acne Treatment",
+            "Skin Rejuvenation",
+            "Scar Reduction",
+            "Sun Damage Treatment",
+            "Tattoo Removal",
+            "Spider Vein Treatment"
+        ]
+    },
+    {
+        "department": "laser-hair-removal",
+        "title": "Skin Treatments",
+        "description": "Comprehensive skin treatments designed to improve skin texture, tone, and overall appearance using advanced laser technology.",
+        "items": [
+            "Laser Skin Resurfacing",
+            "Photo Rejuvenation",
+            "Laser Toning",
+            "Collagen Stimulation",
+            "Texture Improvement",
+            "Pore Reduction",
+            "Even Skin Tone Treatment",
+            "Anti-aging Treatment"
+        ]
+    }
+]

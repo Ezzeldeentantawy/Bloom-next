@@ -20,6 +20,19 @@ export const Departments = () => {
                     </p>}
                 />
                 <DepartmentCard
+                    src="/departments-section/BASC.jpeg"
+                    alt="Beauty and skin care image"
+                    title="Beauty and Skin Care"
+                    describtion={<p>
+                        At our <span className="text-primary-color">beauty clinic</span>, we believe that skincare is more than a routine, it&#39;s a journey to confidence and lasting radiance.
+                        Our expert treatments are designed to nourish, rejuvenate, and reveal your skin&#39;s
+                        natural beauty. Using the latest techniques and high-quality products, we personalize every
+                        service to suit your unique needs. Whether you&#39;re seeking a glowing complexion, anti-aging
+                        solutions, or simply a moment of self-care, our clinic is your trusted destination for healthy,
+                        beautiful skin.
+                    </p>}
+                />
+                <DepartmentCard
                     src="/departments-section/LAHR.jpeg"
                     alt="Laser hair removal and laser treatment"
                     title="Laser hair removal and laser treatment"
@@ -30,12 +43,6 @@ export const Departments = () => {
                         </span>
                         {" "}is dedicated to providing safe, effective, and long-lasting hair reduction treatments using state-of-the-art laser technology. Staffed by trained professionals, we offer personalized care tailored to different skin types and hair textures. Whether you&#39;re looking for treatment on the face, legs, arms, or other areas, our goal is to deliver smooth, hair-free results in a comfortable and hygienic environment. We prioritize client safety, privacy, and satisfaction in every session.
                     </p>}
-                />
-                <DepartmentCard
-                    src="/departments-section/SAWLP.jpeg"
-                    alt="Slimming and weight loss program"
-                    title="Slimming and weight lose program"
-                    describtion="Transform your body with our proven slimming & weight loss program! Burn fat, boost metabolism, and achieve lasting results. Start your journey today!"
                 />
                 <DepartmentCard
                     title="Dental"
