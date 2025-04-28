@@ -7,7 +7,7 @@ export const Departments = () => {
                 <h1 className="text-4xl font-bold text-main-color mb-4">
                     Our Departments
                 </h1>
-                <p className="text-white text-lg mb-4">
+                <p className="text-black text-lg mb-4">
                     Explore our wide range of departments and services designed to cater to
                 </p>
                 <DepartmentCard
