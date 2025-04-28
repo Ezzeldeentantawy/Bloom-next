@@ -1,35 +1,26 @@
 [
     {
         "department": "laser-hair-removal",
-        "title": "Chrome Technology",
+        "title": "Chrome (Q-Switched Technology for soft light)",
         "description": "Experience cutting-edge laser hair removal with our Chrome technology. This advanced system offers precise, comfortable, and effective hair reduction for all skin types.",
         "items": [
-            "Full Body (Female)",
-            "Full Body (Male)",
-            "Full Face",
-            "Full Legs",
-            "Full Arms",
-            "Bikini Line",
-            "Brazilian",
-            "Underarms",
-            "Back",
-            "Chest"
+            "Multi-Wavelength System: Uses 1064 nm & 532 nm Q-Switched Nd: YAG for diverse treatments.",
+            "Skin Rejuvenation:Targets pigmentation, vascular lesions, and fine lines.",
+            "Carbon Peel:Enhances skin brightness, texture, and acne control.",
+            "Fractional 1064 nm:Improves skin resurfacing and scar treatment.",
+            "OnychomycosisTreatment:Effectively treats nail fungal infections."
         ]
     },
     {
         "department": "laser-hair-removal",
-        "title": "Duetto Technology",
+        "title": "Duetto MT EVO",
         "description": "Our Duetto laser system combines two wavelengths for optimal hair removal results, suitable for all skin types and hair colors.",
         "items": [
-            "Full Body Treatment",
-            "Face & Neck",
-            "Upper & Lower Legs",
+            "Mixed Technology:Combines Alexandrite (755 nm) & Nd:YAG (1064 nm)for diverse hair types.",
+            "Targets Vellus Hair *Effectively removes *fine, light, and peach fuzz hair.",
+            "Painless Treatment cooling system and reduces discomfort",
             "Full Arms Treatment",
-            "Extended Bikini",
-            "Brazilian Area",
-            "Underarm Region",
-            "Back Treatment",
-            "Chest Area"
+            "Fast & Efficient:Large spot sizes ensure quick and effective sessions."
         ]
     },
     {
@@ -37,15 +28,10 @@
         "title": "GentleMax Pro",
         "description": "The GentleMax Pro delivers powerful yet gentle laser hair removal, combining two fast and effective laser technologies for optimal results across all skin types.",
         "items": [
-            "Complete Body Package",
-            "Facial Hair Removal",
-            "Leg Hair Removal",
-            "Arm Hair Treatment",
-            "Bikini Area",
-            "Full Brazilian",
-            "Underarm Treatment",
-            "Back Hair Removal",
-            "Chest Hair Removal"
+            "lDual Wavelength:Alexandrite (755 nm) & Nd:YAG (1064 nm)for all skin types.",
+            "Hair Removal:Targets coarse and fine (vellus) hair efficiently.",
+            "Pigmentation & Rejuvenation:Treats sun damage, pigmentation, vascular lesions, and skin tightening.",
+            "Comfort & Safety :Dynamic Cooling Device (DCD) minimizes discomfort."
         ]
     },
     {
@@ -53,29 +39,53 @@
         "title": "Specialized Laser Treatments",
         "description": "Advanced laser treatments for specific skin concerns and aesthetic enhancement, using state-of-the-art technology for optimal results.",
         "items": [
-            "Pigmentation Treatment",
-            "Vascular Lesion Removal",
-            "Acne Treatment",
-            "Skin Rejuvenation",
-            "Scar Reduction",
-            "Sun Damage Treatment",
-            "Tattoo Removal",
-            "Spider Vein Treatment"
+            "Laser Hyperhidrosis Treatment",
+            "Laser Hair Bleaching",
+            "Dark Circles Treatment",
+            "Spider and Varicose Veins Treatment",
+            "Dimple Creation"
         ]
     },
     {
         "department": "laser-hair-removal",
-        "title": "Skin Treatments",
+        "title": "Skin Treatments & Pigmentation Correction",
         "description": "Comprehensive skin treatments designed to improve skin texture, tone, and overall appearance using advanced laser technology.",
         "items": [
-            "Laser Skin Resurfacing",
-            "Photo Rejuvenation",
-            "Laser Toning",
-            "Collagen Stimulation",
-            "Texture Improvement",
-            "Pore Reduction",
-            "Even Skin Tone Treatment",
-            "Anti-aging Treatment"
+            "Laser Photo Jejuvenation",
+            "Skin Pigmentation Treatment",
+            "Melasma Treatment",
+            "Active Acne Treatment",
+            "Large Pores Treatment",
+            "Scar Removal",
+            "Fine Lines and Wrinkles Removal",
+            "Skin Resurfacing Treatment",
+            "Freckles and Blemishes Treatment",
+            "Smoker’s Lips Treatment",
+            "Nose Reshaping",
+            "Spider Veins Treatment"
+        ]
+    },
+    {
+        "department": "laser-hair-removal",
+        "title": "Tatto & Lesion Removal",
+        "description": "State-of-the-art laser technology for safe and effective removal of tattoos and various pigmented lesions, utilizing precise wavelengths to target different ink colors and skin conditions.",
+        "items": [
+            "Laser Tattoo Removal",
+            "Skin lesion Removal",
+            "Port wine Stains Removal",
+            "Hemangioma Treatment",
+            "Multi-Color Tattoo Removal"
+        ]
+    },
+    {
+        "department": "laser-hair-removal",
+        "title": "Skin Rejuvenation & Tightening",
+        "description": "State-of-the-art laser technology for safe and effective removal of tattoos and various pigmented lesions, utilizing precise wavelengths to target different ink colors and skin conditions.",
+        "items": [
+            "Laser Skin Tightening",
+            "Laser Tightening and Rejuvenation",
+            "Non-Surgical Facelift",
+            "Fractional CO2 Laser"
         ]
     }
 ]

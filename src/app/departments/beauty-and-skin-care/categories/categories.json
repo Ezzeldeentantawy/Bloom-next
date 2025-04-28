@@ -63,11 +63,12 @@
         "title": "Rejuvenation Facial",
         "description": "Experience the ultimate skin revival with our Rejuvenation Facial treatments. Using advanced techniques and premium products, we restore your skin's natural radiance and youthful appearance.",
         "items": [
-            "Hydrating Facial",
-            "Anti-aging Treatment",
-            "Brightening Facial",
-            "Collagen Boost Therapy",
-            "Vitamin C Infusion"
+            "Nimue Facial",
+            "DMK Facial",
+            "BioMedical Facial",
+            "DMK Enzyme Therapy Facail",
+            "PCA Skin",
+            "Vitamin facial"
         ]
     },
     {
@@ -75,23 +76,28 @@
         "title": "Special Treatments",
         "description": "Our specialized treatments target specific skin concerns with precision and effectiveness, delivering remarkable results.",
         "items": [
-            "LED Light Therapy",
-            "Ultrasonic Skin Scrubbing",
-            "Microcurrent Facial",
-            "High-Frequency Treatment",
-            "Oxygen Infusion"
+            "Dark Circles Treatment",
+            "Acne Scar Treatment",
+            "Hypertrophic Scars Treatment",
+            "APTOS Threads",
+            "Buccal Facial Massage",
+            "Scar Camouflage"
         ]
     },
     {
         "department":"beauty and skin care",
-        "title": "Skin Renewal",
+        "title": "Skin Renewal & Microneedling Treatments",
         "description": "Transform your skin with our innovative renewal treatments that promote cell turnover and skin regeneration.",
         "items": [
-            "Chemical Peels",
-            "Microdermabrasion",
-            "Enzyme Treatment",
-            "Dermaplaning",
-            "Retinol Treatment"
+            "Microneedling Therapies",
+            "Mesotherapy",
+            "microneedling",
+            "Oxyneedling",
+            "BB Glow",
+            "Dermapen Mesofacial",
+            "Exion RF Microneedling",
+            "4 plus RF Microneedling",
+            "4 plus fractional RF Microneedling"
         ]
     },
     {
@@ -99,11 +105,9 @@
         "title": "Skin Brightening",
         "description": "Achieve a radiant, even-toned complexion with our targeted brightening treatments.",
         "items": [
-            "Vitamin C Treatment",
-            "Alpha Arbutin Therapy",
-            "Kojic Acid Treatment",
-            "Glutathione Infusion",
-            "Dark Spot Correction"
+            "Body lightening",
+            "Intimate Brightening",
+            "Decolletage Whitening & Anti-Aging"
         ]
     },
     {
@@ -111,11 +115,12 @@
         "title": "Special Peels",
         "description": "Advanced chemical peeling treatments designed to address various skin concerns and promote skin renewal.",
         "items": [
-            "Glycolic Peel",
-            "Salicylic Peel",
-            "TCA Peel",
-            "Jessner Peel",
-            "Mandelic Peel"
+            "Cosmelan",
+            "Meladeep Intimate",
+            "Meladeep Body",
+            "Dermamelan",
+            "Radiance Peel",
+            "Natural Carbon Peel"
         ]
     }
     

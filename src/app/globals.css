@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --offWhite: #2e2e2e;
+  --offWhite: #40454e;
   --main-color: #fac06a;
   --primary-color: #ee2424;
+    font-family: var(--font-noto);
 }
 html {
   scroll-behavior: smooth;
