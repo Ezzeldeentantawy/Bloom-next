@@ -22,7 +22,7 @@ export const Header = () => {
                     Book now
                 </button>
             </div>
-            <FontAwesomeIcon icon={faWhatsapp} className="fixed bottom-4 right-4 z-30 text-green-500 text-3xl sm:text-4xl md:text-6xl" />
+            <FontAwesomeIcon icon={faWhatsapp} className="fixed bottom-4 right-4 z-30 text-green-500 text-6xl" />
         </div>
     )
 }
