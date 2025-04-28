@@ -18,7 +18,7 @@ export const Categories = () => {
                     <h1 className="text-lg sm:text-xl lg:text-2xl text-main-color">
                         &bull; {category.title}
                     </h1>
-                    <h3 className="ps-4 text-white text-md sm:text-lg lg:text-xl">
+                    <h3 className="ps-4 text-black text-md sm:text-lg lg:text-xl">
                         {category.description}
                     </h3>
                     <button 
@@ -29,7 +29,7 @@ export const Categories = () => {
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                         }`}>
                             <div className="w-full max-w-2xl rounded-2xl">
-                                <ol className="list-decimal list-inside space-y-2 text-white text-base sm:text-lg">
+                                <ol className="list-decimal list-inside space-y-2 text-black  text-base sm:text-lg">
                                     {category.items.map((item, index) => (
                                         <li key={index}>{item}</li>
                                     ))}
@@ -37,7 +37,7 @@ export const Categories = () => {
                             </div>
                         </div>
                     <div className="text-center my-4">
-                        <span className="border-b border-white px-24 sm:px-32 md:px-48 lg:px-64"></span>
+                        <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64"></span>
                     </div>
                 </div>
             ))}

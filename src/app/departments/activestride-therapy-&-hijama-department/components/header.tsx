@@ -5,7 +5,7 @@ export const Header = () => {
         <header className="flex flex-col items-center justify-center text-white px-2 sm:px-6 md:px-10">
             <div className="flex flex-col items-center justify-center mt-4">
                 <Image 
-                    src="/departments-section/D.png"
+                    src="/departments-section/ASTAH.jpeg"
                     alt="Dermatology & Aesthetics"
                     className="rounded-2xl mb-4"
                     width={500}

@@ -12,7 +12,7 @@ export default function PrecisionDiagnosticsLab() {
         <div className="">
             <Header />
             <div className="text-center my-4">
-                <span className="border-b border-white px-24 sm:px-32 md:px-48 lg:px-64"></span>
+                <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64"></span>
             </div>
             <Tests />
         </div>

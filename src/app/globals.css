@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --offWhite: #485161;
+  --offWhite: #f9f9f9;
   --main-color: #fac06a;
   --primary-color: #ee2424;
     font-family: var(--font-noto);

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const Header = () => {
     return(
-        <div className="flex flex-col items-center justify-center text-white px-2 sm:px-6 md:px-10">
+        <div className="flex flex-col items-center justify-center text-black px-2 sm:px-6 md:px-10">
             <div className="flex items-center justify-center">
                 <Image
                     src="/departments-section/PDL.jpeg"

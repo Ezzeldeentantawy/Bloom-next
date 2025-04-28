@@ -2,7 +2,7 @@
 
 export const Tests = () => {
     return(
-        <div className="px-2 sm:px-6 md:px-10 text-white">
+        <div className="px-2 sm:px-6 md:px-10 text-black">
             <h1 className="text-main-color text-center text-xl sm:text-2xl lg:text-3xl">
                 Medical Tests available in the Lab
             </h1>

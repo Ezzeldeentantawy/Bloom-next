@@ -24,9 +24,9 @@ export default function Home() {
         </Head>
         <div className="text-center font-merriweather">
           <Header />
-          <span className="border-b border-white px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
+          <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
           <WhyUs/>
-          <span className="border-b border-white px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
+          <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
           <Departments/>
         </div>
       </>

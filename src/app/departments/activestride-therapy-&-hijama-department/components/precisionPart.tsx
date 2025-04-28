@@ -3,7 +3,7 @@ import Image from "next/image"
 export const PrecisionDignosticsLab = () => {
     return(
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between my-4">
-            <p className="text-md sm:text-lg md:text-xl text-white">
+            <p className="text-md sm:text-lg md:text-xl text-black">
                 Your journey to beauty starts with precision - after selecting your desired 
                 treatment, you&#39;ll first visit our {" "}
                 <Link
