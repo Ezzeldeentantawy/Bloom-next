@@ -35,7 +35,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--offWhite);
+  background-color: var(--main-color);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: -1;
