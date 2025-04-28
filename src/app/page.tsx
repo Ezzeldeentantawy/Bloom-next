@@ -3,6 +3,7 @@ import { Header } from "./components/header";
 import Head from "next/head";
 import { WhyUs } from "./components/whyUs";
 import { Metadata } from 'next';
+import { Contact } from "./components/contact";
 
 export const metadata: Metadata = {
   title: 'Best Medical Center in Ras-Elkhaima | Skin, Laser, Botox & More',
@@ -28,6 +29,8 @@ export default function Home() {
           <WhyUs/>
           <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
           <Departments/>
+          <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
+          <Contact/>
         </div>
       </>
   );

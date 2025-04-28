@@ -48,7 +48,7 @@ export const Navbar = () => {
     const pathname = usePathname();
     return(
     <>
-        <nav ref={nav} className="block nav-blurry-bg text-white z-10">
+        <nav ref={nav} className="relative block nav-blurry-bg text-white z-10">
             <div className="hidden lg:flex flex-col justify-end pe-4 items-center py-0 lg:py-6">
                 <ul className="hidden lg:flex justify-between items-center z-10 pe-5">
                     <li className="relative flex gap-8">
@@ -59,7 +59,7 @@ export const Navbar = () => {
                         className="text-md hover:text-red-500">
                             Departments
                         </Link>
-                        <Link href="#" className="text-md hover:text-red-500">Contact</Link>
+                        <Link href="/contact-us" className="text-md hover:text-red-500">Contact</Link>
                         <Link href="#" className="text-md hover:text-red-500">Book now</Link>
                     </li>
                 </ul>
@@ -116,6 +116,7 @@ export const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
                 </button>
             </div>
+            
         </nav>
             {open && 
             <ul ref={mobileNav} className="h-full text-white mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden z-30">
@@ -166,7 +167,7 @@ export const Navbar = () => {
                         Departments
                     </Link>
                         <span className="border-b border-white py-3"></span>
-                        <Link id="element5" href="#" className="text-md flex items-center justify-center hover:text-red-500">
+                        <Link id="element5" href="/contact-us" className="text-md flex items-center justify-center hover:text-red-500">
                             <Image
                                 src="/header/nav/contact.png"
                                 alt="home page"

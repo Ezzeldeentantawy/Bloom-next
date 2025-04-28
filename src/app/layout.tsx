@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${noto.variable} ${montserrat.variable} font-sans ocbg antialiased`}
+        className={`${noto.variable} ${montserrat.variable} text-black font-sans ocbg antialiased`}
       >
           <main>{children}</main>
       </body>

@@ -1,6 +1,8 @@
 "use client";
 import { useRef, useEffect } from "react"
 import gsap from "gsap"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "./nav"
 
 export const Header = () => {
@@ -20,6 +22,7 @@ export const Header = () => {
                     Book now
                 </button>
             </div>
+            <FontAwesomeIcon icon={faWhatsapp} className="fixed bottom-4 right-4 z-30 text-green-500 text-3xl sm:text-4xl md:text-6xl" />
         </div>
     )
 }
