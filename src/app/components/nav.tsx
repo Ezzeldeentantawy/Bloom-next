@@ -143,7 +143,9 @@ export const Navbar = () => {
                     Home
                     </Link>
                     <span className="border-b border-white py-3"></span>
-                        <Link id="element2" href="/#Whyus" className=" flex items-center justify-center text-md hover:text-red-500">
+                        <Link 
+                        onClick={() => setOpen(false)}
+                        id="element2" href="/#Whyus" className=" flex items-center justify-center text-md hover:text-red-500">
                     <Image
                         src="/header/nav/help.png"
                         alt="home page"
@@ -155,6 +157,7 @@ export const Navbar = () => {
                     </Link>
                     <span className="border-b border-white py-3"></span>
                     <Link id="element3"
+                    onClick={() => setOpen(false)}
                         href="/#departments"
                             className="text-md flex items-center justify-center hover:text-red-500">
                             <Image
