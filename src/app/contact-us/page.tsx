@@ -1,17 +1,17 @@
 'use client';
 
 import { Mail, PhoneCall, MapPin } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Navbar } from '../components/nav';
 
 export default function ContactPage() {
     return (
-        <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="min-h-screen bg-[#fac06a] py-16 px-6 flex flex-col items-center text-[#ee2424]"
+        <section
+            className="min-h-screen bg-[#fac06a] py-2 flex flex-col items-center text-[#ee2424]"
         >
-            <div className="max-w-4xl w-full text-center space-y-6">
+            <div className='w-full'>
+            <Navbar/>
+            </div>
+            <div className="max-w-4xl w-full text-center mt-4 space-y-6">
                 {/* Header */}
                 <h1 className="text-4xl font-bold">Contact Beauty Clinic</h1>
                 <p className="text-lg text-[#ee2424]/80">
@@ -91,6 +91,6 @@ export default function ContactPage() {
                     </form>
                 </div>
             </div>
-        </motion.section>
+        </section>
     );
 }

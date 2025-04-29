@@ -1,3 +1,4 @@
+import { Navbar } from "@/app/components/nav"
 import { Header } from "./components/header"
 import { Tests } from "./components/tests"
 
@@ -9,6 +10,8 @@ export const metadata = {
 }
 export default function PrecisionDiagnosticsLab() {
     return(
+        <>
+        <Navbar/>
         <div className="">
             <Header />
             <div className="text-center my-4">
@@ -16,5 +19,6 @@ export default function PrecisionDiagnosticsLab() {
             </div>
             <Tests />
         </div>
+        </>
     )
 }

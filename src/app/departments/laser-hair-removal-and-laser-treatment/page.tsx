@@ -1,3 +1,4 @@
+import { Navbar } from "@/app/components/nav"
 import { Categories } from "./categories/categories"
 import { Header } from "./components/header"
 import { Departments } from "./components/otherDepartments"
@@ -12,6 +13,8 @@ export const metadata = {
 
 export default function DermatologyAndAesthetics() {
     return(
+        <>
+        <Navbar/>
         <div className="px-2 sm:px-6 md:px-10">
             <Header />
             <div className="text-center">
@@ -21,5 +24,6 @@ export default function DermatologyAndAesthetics() {
             <PrecisionDignosticsLab/>
             <Departments/>
         </div>
+        </>
     )
 }
