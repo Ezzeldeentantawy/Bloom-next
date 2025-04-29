@@ -18,32 +18,27 @@ export const Navbar = () => {
     const mobileNav = useRef<HTMLUListElement>(null);
 
     useEffect(() => {
-        gsap.fromTo(
-            nav.current,
-            {y:-100, opacity:0},
-            {y:0, opacity:1, duration:1}
-        );
+        const tl = gsap.timeline();
+        if(open === true){
+            gsap.fromTo(
+                mobileNav.current,
+                {y:-100, opacity:0},
+                {y:0, opacity:1, duration:1},
+            );
+            tl.fromTo("#element1", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .5, ease: "back.in" })
+                .fromTo("#element2", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
+                .fromTo("#element3", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
+                .fromTo("#element4", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
+                .fromTo("#element5", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
+                .fromTo("#element6", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
+        }else{
+            gsap.fromTo(
+                mobileNav.current,
+                { x: 0, opacity: 1 },
+                { x: 100, opacity: 0, duration: 1 },
+            )
+        }
     })
-    const tl = gsap.timeline();
-    if(open === true){
-        gsap.fromTo(
-            mobileNav.current,
-            {y:-100, opacity:0},
-            {y:0, opacity:1, duration:1},
-        );
-        tl.fromTo("#element1", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .5, ease: "back.in" })
-            .fromTo("#element2", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
-            .fromTo("#element3", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
-            .fromTo("#element4", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
-            .fromTo("#element5", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
-            .fromTo("#element6", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .02, ease: "back.in" })
-    }else{
-        gsap.fromTo(
-            mobileNav.current,
-            { x: 0, opacity: 1 },
-            { x: 100, opacity: 0, duration: 1 },
-        )
-    }
 
     const pathname = usePathname();
     return(
@@ -95,7 +90,7 @@ export const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="lg:hidden flex items-center justify-between p-4">
+            <div className="lg:hidden fixed top-0 mcbg right-0 left-0 flex items-center justify-between p-4">
                 <div>
                     <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
                     <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />

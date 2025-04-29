@@ -11,7 +11,7 @@ export const Header = () => {
                     width={500}
                     height={500}
                 />
-                <h1 className="text-xl sm:text-2xl lg:text-3xl text-main-color text-start sm:text-center">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl text-[#ee2424] text-start sm:text-center">
                     Welcome to our Beauty & Skin Care Department, where radiant, healthy skin is our passion! 
                     We offer personalized treatments to rejuvenate, nourish, and enhance your 
                     natural glow using the latest advancements in skincare science and luxury beauty therapies.

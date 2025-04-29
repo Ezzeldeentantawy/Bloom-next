@@ -11,7 +11,7 @@ export const Header = () => {
                     width={500}
                     height={500}
                 />
-                <h1 className="text-xl sm:text-2xl lg:text-3xl text-main-color text-start sm:text-center">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl text-[#ee2424] text-start sm:text-center">
                     Say goodbye to unwanted hair for good. Discover our top-rated laser hair removal services with proven results and flexible packages.
                 </h1>
             </div>

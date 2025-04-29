@@ -33,6 +33,8 @@ export default function DermatologyAndAesthetics({
     children: React.ReactNode;
     }>) {
     return (
-        <section>{children}</section>
+        <section
+            className="bg-[#fac06a]"
+        >{children}</section>
     );
     }

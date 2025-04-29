@@ -15,7 +15,7 @@ export const Categories = () => {
         <div className="my-6">
             {data.map((category, index) => (
                 <div key={index}>
-                    <h1 className="text-lg sm:text-xl lg:text-2xl text-main-color">
+                    <h1 className="text-lg sm:text-xl lg:text-2xl text-[#ee2424]">
                         &bull; {category.title}
                     </h1>
                     <h3 className="ps-4 text-black text-md sm:text-lg lg:text-xl">
@@ -23,7 +23,7 @@ export const Categories = () => {
                     </h3>
                     <button 
                     onClick={() => toggleIndex(index)}
-                    className="mcbg rounded-2xl p-2 ms-4 my-2">
+                    className="pcbg rounded-2xl p-2 ms-4 my-2">
                         {visible[index] ? "Hide" : "Show All"}
                     </button>
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'

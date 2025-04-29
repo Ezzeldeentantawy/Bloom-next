@@ -13,7 +13,7 @@ export const Header = () => {
                 />
             </div>
             <div className="flex items-start flex-col">
-                <h1 className="text-xl sm:text-2xl lg:text-3xl text-main-color text-start sm:text-center">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl text-[#ee2424] text-start sm:text-center">
                     PreCare SmartPlan Diagnostics – Smart pre-diagnostics
                     for an optimal treatment plan.
                 </h1>
@@ -28,7 +28,7 @@ export const Header = () => {
                     helping design personalized treatment plans* tailored to each individual&#39;s unique health needs.
                 </p>
                 <div>
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-main-color text-start">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-[#ee2424] text-start">
                         &bull; What does Precision Diagnostics Lab Offer?
                     </h2>
                     <ul>

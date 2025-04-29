@@ -11,7 +11,7 @@ export const Header = () => {
                     width={500}
                     height={500}
                 />
-                <h1 className="text-xl sm:text-2xl lg:text-3xl text-main-color text-start sm:text-center">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl text-[#ee2424] text-start sm:text-center">
                     Revitalize your body with our medical-grade IV drip therapy! Combat fatigue, enhance immunity & accelerate recovery.
                 </h1>
             </div>

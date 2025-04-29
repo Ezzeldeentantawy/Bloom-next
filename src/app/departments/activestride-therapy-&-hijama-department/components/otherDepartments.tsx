@@ -2,13 +2,13 @@ import { DepartmentCard } from "../../../components/departments/department-card"
 
 export const Departments = () => {
     return(
-        <section className="mt-5 mb-5" id="departments">
+        <section className="mt-5 pb-5" id="departments">
             <div>
                 <h1 className="text-4xl border-b pb-2 border-orange-300 font-bold text-center text-main-color mb-4">
                     Explore other departments
                 </h1>
             </div>
-            <div className="m-4 flex items-center py-4 overflow-auto gap-6">
+            <div className="p-4 flex items-center py-4 overflow-auto gap-6">
                 {/*---------------------------------------------------------------------------------------*/}
                 <DepartmentCard
                     src="/departments-section/BASC.jpeg"

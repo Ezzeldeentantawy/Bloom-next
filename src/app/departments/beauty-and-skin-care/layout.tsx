@@ -32,6 +32,8 @@ export default function BeautyAndSkinCare({
     children: React.ReactNode;
     }>) {
     return (
-        <section>{children}</section>
+        <section
+            className="bg-[#fac06a]"
+        >{children}</section>
     );
     }
