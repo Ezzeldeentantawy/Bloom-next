@@ -22,7 +22,10 @@ export const Header = () => {
                     Book now
                 </button>
             </div>
-            <FontAwesomeIcon icon={faWhatsapp} className="fixed bottom-4 right-4 z-30 text-green-500 text-6xl" />
+            <div className="fixed z-30 bottom-4 right-4 flex items-center justify-center size-16 bg-[#c8c8c8] rounded-full">
+                <span className="absolute rounded-full top-0 left-0 size-5 bg-green-500"></span>
+                <FontAwesomeIcon icon={faWhatsapp} className="text-green-500 text-4xl" />
+            </div>
         </div>
     )
 }

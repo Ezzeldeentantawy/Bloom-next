@@ -50,25 +50,6 @@ export const Navbar = () => {
     <>
         <nav ref={nav} className="relative block nav-blurry-bg text-white z-10">
             <div className="hidden lg:flex flex-col justify-end pe-4 items-center py-0 lg:py-6">
-                <ul className="hidden lg:flex justify-between items-center z-10 pe-5">
-                    <li className="relative flex gap-8">
-                        <Link href="#" className="text-md hover:text-red-500">Home</Link>
-                        <Link href="/#Whyus" className="text-md hover:text-red-500">Why us?</Link>
-                        <Link
-                        href="/#departments" 
-                        className="text-md hover:text-red-500">
-                            Departments
-                        </Link>
-                        <Link href="/contact-us" className="text-md hover:text-red-500">Contact</Link>
-                        <Link href="#" className="text-md hover:text-red-500">Book now</Link>
-                    </li>
-                </ul>
-                <div className="text-2xl font-bold py-4">
-                    <Image src="/header/nav/logo.png" alt="our logo"
-                    width={180}
-                    height={180}
-                    />
-                </div>
                 <div className="flex items-center justify-center gap-10">
                     <div className="flex items-center text-sm p-1 ps-2">
                         <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
@@ -94,6 +75,25 @@ export const Navbar = () => {
                         <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 hover:text-orange-500 transition duration-300" />
                     </i>
                 </div>
+                <div className="text-2xl font-bold py-4">
+                    <Image src="/header/nav/logo.png" alt="our logo"
+                    width={200}
+                    height={150}
+                    />
+                </div>
+                <ul className="hidden lg:flex justify-between items-center z-10 pe-5">
+                    <li className="relative flex gap-8">
+                        <Link href="/" className="text-md hover:text-red-500">Home</Link>
+                        <Link href="/#Whyus" className="text-md hover:text-red-500">Why us?</Link>
+                        <Link
+                            href="/#departments"
+                            className="text-md hover:text-red-500">
+                            Departments
+                        </Link>
+                        <Link href="/contact-us" className="text-md hover:text-red-500">Contact</Link>
+                        <Link href="/book-now" className="text-md hover:text-red-500">Book now</Link>
+                    </li>
+                </ul>
             </div>
             <div className="lg:hidden flex items-center justify-between p-4">
                 <div>
@@ -131,8 +131,8 @@ export const Navbar = () => {
                 </button>
                 <li className="relative flex flex-col justify-around w-full h-full my-4">
                     <Link id="element1" 
-                    href="#" 
-                    className={`${pathname === "/" ? "mcbg" : "" } mx-28 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
+                    href="/" 
+                    className={`${pathname === "/" ? "mcbg" : "" } mx-24 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
                     <Image 
                     src="/header/nav/home.png"
                     alt="home page"
@@ -167,7 +167,7 @@ export const Navbar = () => {
                         Departments
                     </Link>
                         <span className="border-b border-white py-3"></span>
-                        <Link id="element5" href="/contact-us" className="text-md flex items-center justify-center hover:text-red-500">
+                        <Link id="element5" href="/contact-us" className={`${pathname === "/contact-us" ? "mcbg" : "" } text-md flex items-center justify-center hover:text-red-500`}>
                             <Image
                                 src="/header/nav/contact.png"
                                 alt="home page"
@@ -178,7 +178,7 @@ export const Navbar = () => {
                     Contact
                     </Link>
                     <span className="border-b  border-white py-3"></span>
-                        <Link id="element6" href="#" className="text-md flex items-center justify-center hover:text-red-500">
+                        <Link id="element6" href="/book-now" className={`${pathname === "/book-now" ? "mcbg" : "" } text-md flex items-center justify-center hover:text-red-500`}>
                             <Image
                                 src="/header/nav/booking.png"
                                 alt="home page"
