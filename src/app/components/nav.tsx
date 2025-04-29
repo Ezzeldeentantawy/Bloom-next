@@ -126,6 +126,7 @@ export const Navbar = () => {
                 </button>
                 <li className="relative flex flex-col justify-around w-full h-full my-4">
                     <Link id="element1" 
+                    onClick={() => setOpen(false)}
                     href="/#" 
                     className={`${pathname === "/" ? "mcbg" : "" } mx-24 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
                     <Image 
