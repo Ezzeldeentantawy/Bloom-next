@@ -167,7 +167,7 @@ export const Navbar = () => {
                         Departments
                     </Link>
                         <span className="border-b border-white py-3"></span>
-                        <Link id="element5" href="/contact-us" className={`${pathname === "/contact-us" ? "mcbg" : "" } text-md flex items-center justify-center hover:text-red-500`}>
+                        <Link id="element5" href="/contact-us" className={`${pathname === "/contact-us" ? "mcbg" : "" } mx-24 rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
                             <Image
                                 src="/header/nav/contact.png"
                                 alt="home page"
@@ -178,7 +178,7 @@ export const Navbar = () => {
                     Contact
                     </Link>
                     <span className="border-b  border-white py-3"></span>
-                        <Link id="element6" href="/book-now" className={`${pathname === "/book-now" ? "mcbg" : "" } text-md flex items-center justify-center hover:text-red-500`}>
+                        <Link id="element6" href="/book-now" className={`${pathname === "/book-now" ? "mcbg" : "" } mx-24 rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
                             <Image
                                 src="/header/nav/booking.png"
                                 alt="home page"

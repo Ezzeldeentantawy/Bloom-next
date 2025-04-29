@@ -52,6 +52,7 @@ export default function BookingPage() {
 
                     <input
                         type="date"
+                        placeholder='mm/dd/yy'
                         min={new Date().toISOString().split('T')[0]}
                         required
                         className="border-2 border-[#fac06a] rounded-lg px-4 py-3 focus:outline-none focus:border-[#ee2424]"
