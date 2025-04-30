@@ -2,6 +2,7 @@ import { Navbar } from "@/app/components/nav"
 import { Header } from "./components/header"
 import { Tests } from "./components/tests"
 import { DBookNowCard } from "@/app/components/dBook"
+import { Departments } from "./components/otherDepartments"
 
 export const metadata = {
     title: {
@@ -13,12 +14,13 @@ export default function PrecisionDiagnosticsLab() {
     return(
         <>
         <Navbar/>
-        <div className="pb-6 pt-12">
+        <div className="pb-6 pt-24 lg:pt-6">
             <Header />
             <div className="text-center my-4">
                 <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64"></span>
             </div>
             <Tests />
+            <Departments/>
             <DBookNowCard/>
         </div>
         </>

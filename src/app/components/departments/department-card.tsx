@@ -136,13 +136,13 @@
         </div>
         <div className="flex h-64 flex-col items-center justify-around">
             <h1
-            className="text-2xl mb-auto font-bold text-center mt-4"
+            className="text-[20px] mb-auto font-bold text-center mt-4"
             ref={titleRef}
             >
             {title}
             </h1>
             <div
-            className="text-center overflow-hidden text-ellipsis whitespace-wrap line-clamp-3 px-2"
+            className="text-[16px] sm:text-[18px] text-center overflow-hidden text-ellipsis whitespace-wrap line-clamp-3 px-2"
             ref={descRef}
             >
             {describtion}

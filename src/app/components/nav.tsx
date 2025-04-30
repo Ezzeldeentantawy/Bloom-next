@@ -43,58 +43,31 @@ export const Navbar = () => {
     const pathname = usePathname();
     return(
     <>
-        <nav ref={nav} className="relative block nav-blurry-bg text-white z-10">
-            <div className="hidden lg:flex flex-col justify-end pe-4 items-center py-0 lg:py-6">
-                <div className="flex items-center justify-center gap-10">
-                    <div className="flex items-center text-sm p-1 ps-2">
-                        <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
-                        <Link
-                            className="hover:text-red-600 ps-2 transition duration-300"
-                            href="tel:+010000000">
-                        </Link>
+            <nav ref={nav} className="nav-blurry-bg relative block text-white z-10">
+            <div className="hidden lg:flex flex-col justify-end pe-4 items-center py-0 lg:py-2">
+                <div className="flex items-center justify-between w-full">
+                    <div className="py-4">
+                        <Image src="/header/nav/logo.png" alt="our logo"
+                        width={170}
+                        height={120}
+                        />
                     </div>
-                    <div className="flex items-center justify-center text-md ps-2">
-                        <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" />
-                        <Link
-                            className="hover:text-red-600 ps-2 transition duration-300"
-                            href="example@test.com">
-                        </Link>
-                    </div>
-                    <i aria-label="our youtube channel">
-                        <FontAwesomeIcon icon={faYoutube} className="w-6 h-6 hover:text-red-600 transition duration-300" />
-                    </i>
-                    <i aria-label="our facebook page">
-                        <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5 hover:text-blue-600 transition duration-300" />
-                    </i>
-                    <i aria-label="our instagram page">
-                        <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 hover:text-orange-500 transition duration-300" />
-                    </i>
+                    <ul className="hidden lg:flex text-[18px] justify-between items-center z-10 pe-5">
+                        <li className="relative flex gap-8">
+                            <Link href="/" className="text-md hover:text-red-500">Home</Link>
+                            <Link href="/#Whyus" className="text-md hover:text-red-500">Why us?</Link>
+                            <Link
+                                href="/#departments"
+                                className="text-md hover:text-red-500">
+                                Departments
+                            </Link>
+                            <Link href="/contact-us" className="text-md hover:text-red-500">Contact</Link>
+                            <Link href="/book-now" className="text-md hover:text-red-500">Book now</Link>
+                        </li>
+                    </ul>
                 </div>
-                <div className="text-2xl font-bold py-4">
-                    <Image src="/header/nav/logo.png" alt="our logo"
-                    width={200}
-                    height={150}
-                    />
-                </div>
-                <ul className="hidden lg:flex justify-between items-center z-10 pe-5">
-                    <li className="relative flex gap-8">
-                        <Link href="/" className="text-md hover:text-red-500">Home</Link>
-                        <Link href="/#Whyus" className="text-md hover:text-red-500">Why us?</Link>
-                        <Link
-                            href="/#departments"
-                            className="text-md hover:text-red-500">
-                            Departments
-                        </Link>
-                        <Link href="/contact-us" className="text-md hover:text-red-500">Contact</Link>
-                        <Link href="/book-now" className="text-md hover:text-red-500">Book now</Link>
-                    </li>
-                </ul>
             </div>
-            <div className="lg:hidden fixed top-0 mcbg right-0 left-0 flex items-center justify-between p-4">
-                <div>
-                    <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
-                    <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />
-                </div>
+            <div className="lg:hidden fixed bg-black top-0 right-0 left-0 flex items-center justify-between p-4">
                 <div className="flex items-center justify-center gap-4">
                     <Image src="/header/nav/logo.png" alt="our logo"
                     width={120}
