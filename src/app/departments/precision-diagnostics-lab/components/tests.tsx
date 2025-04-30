@@ -93,7 +93,7 @@ export const Tests = () => {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                         variants={fadeInUp}
-                        className="bg-white p-4 rounded-xl shadow-sm"
+                        className="bg-white hover:scale-105 p-4 rounded-xl shadow-sm"
                     >
                         <h3 className="text-lg sm:text-xl lg:text-2xl text-[#ee2424] mb-2">
                             &bull; {test.title}
