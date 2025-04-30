@@ -103,7 +103,7 @@ export const Header = () => {
                 href="https://wa.me/201284124174"
                 target="_blank"
                 aria-label="Chat on WhatsApp"
-                className="fixed z-30 bottom-4 right-4 flex items-center justify-center size-16 bg-[#c8c8c8] rounded-full shadow-md hover:shadow-xl transition-transform hover:scale-110"
+                className="fixed z-30 bottom-0 m-4 right-0 flex items-center justify-center size-16 bg-[#c8c8c8] rounded-full shadow-md hover:shadow-xl transition-transform hover:scale-110"
             >
                 <span className="absolute rounded-full top-0 left-0 size-5 bg-green-500"></span>
                 <FontAwesomeIcon icon={faWhatsapp} className="text-green-500 text-4xl" />
