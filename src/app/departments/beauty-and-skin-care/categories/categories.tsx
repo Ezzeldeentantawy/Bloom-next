@@ -1,9 +1,6 @@
 "use client";
 import { useState } from "react";
 import data from "./categories.json"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { Svg } from "@/app/components/svg";
 import { SlashSvg } from "@/app/components/slashSvg";
 

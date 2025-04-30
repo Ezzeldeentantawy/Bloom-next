@@ -1,7 +1,5 @@
 "use client";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SlashSvg } from "@/app/components/slashSvg";
