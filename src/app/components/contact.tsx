@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 export const Contact = () => {
     const router = useRouter();
     return (
-        <div className="max-w-md my-4 mx-auto p-8 rounded-2xl shadow-2xl bg-[#fac06a] text-[#ee2424] space-y-6">
+        <div className="w-96 mx-auto my-4 p-8 rounded-2xl shadow-2xl bg-[#fac06a] text-[#ee2424] space-y-6">
             <div className="text-center">
                 <h2 className="text-3xl font-bold">Get In Touch</h2>
                 <p className="text-lg mt-2 text-[#ee2424]/80">We&#39;d love to hear from you!</p>

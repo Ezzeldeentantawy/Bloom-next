@@ -11,7 +11,7 @@ export const Departments = () => {
                     Explore our wide range of departments and services designed to cater to
                 </p>
             </div>
-            <div className="m-4 flex flex-wrap items-center justify-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-6">
                 {/*---------------------------------------------------------------------------------------*/}
                 <DepartmentCard
                     src="/departments-section/PDL.jpeg"

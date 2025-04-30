@@ -24,10 +24,11 @@ export const Categories = () => {
                     <h3 className="ps-4 text-black text-md sm:text-lg lg:text-xl">
                         {category.description}
                     </h3>
-                    <div className="text-center">
+                    <div className="flex flex-col items-center">
+                        &darr;
                         <button
                             onClick={() => toggleIndex(index)}
-                            className="p-2 ms-4 my-2 text-[26px] sm:text-[30px] md:text-[32px]">
+                            className="my-2 w-6">
                             {visible[index] ? <SlashSvg/> : <Svg/>}
                         </button>
                     </div>
