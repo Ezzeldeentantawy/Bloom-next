@@ -26,7 +26,7 @@ export const Categories = () => {
                     className="pcbg rounded-2xl p-2 ms-4 my-2">
                         {visible[index] ? "Hide" : "Show All"}
                     </button>
-                    <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                    <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
                         }`}>
                             <div className="w-full max-w-2xl rounded-2xl">
                                 <ol className="list-decimal list-inside space-y-2 text-black  text-base sm:text-lg">
