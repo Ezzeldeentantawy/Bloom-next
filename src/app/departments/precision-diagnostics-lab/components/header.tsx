@@ -21,7 +21,8 @@ export const Header = () => {
             </div>
             <div className="flex items-start flex-col">
                 <h1 className="text-[28px] sm:text-[30px] md:text-[34px] text-[#ee2424] text-center">
-                    PreCare SmartPlan Diagnostics – Smart pre-diagnostics
+                    PreCare SmartPlan Diagnostics <br/> 
+                    Smart pre-diagnostics
                     for an optimal treatment plan.
                 </h1>
 
