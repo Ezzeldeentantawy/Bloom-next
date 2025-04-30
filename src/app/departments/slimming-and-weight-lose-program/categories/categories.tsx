@@ -27,9 +27,9 @@ export const Categories = () => {
                     <button
                         onClick={() => toggleIndex(index)}
                         className="p-2 ms-4 my-2 text-[22px] sm:text-[24px] md:text-[26px]">
-                        {visible[index] ? <FontAwesomeIcon icon={faEyeSlash} className="text-black hover:text-[#ee2424]" />
+                        {visible[index] ? <FontAwesomeIcon icon={faEyeSlash} className="text-[#ee2424]" />
                             :
-                            <FontAwesomeIcon icon={faEye} className="text-black hover:text-[#ee2424]" />}
+                            <FontAwesomeIcon icon={faEye} className="text-[#ee2424]" />}
                     </button>
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
                         }`}>
