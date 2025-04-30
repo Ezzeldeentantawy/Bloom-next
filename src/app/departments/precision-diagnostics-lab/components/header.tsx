@@ -20,12 +20,12 @@ export const Header = () => {
                 />
             </div>
             <div className="flex items-start flex-col">
-                <h1 className="text-[28px] sm:text-[30px] md:text-[34px] text-[#ee2424] text-center">
+                <h1 className="text-[28px] sm:text-[30px] md:text-[34px] text-[#ee2424] text-center border-b border-black border-dashed">
                     PreCare SmartPlan Diagnostics – Smart pre-diagnostics
                     for an optimal treatment plan.
                 </h1>
 
-                <ul className="text-[22px] sm:text-[24px] md:text-[26px] mt-4 ps-1 text-center w-full">
+                <ul className="text-[22px] sm:text-[24px] md:text-[26px] mt-4 ps-1 text-center w-full border-b border-black border-dashed">
                     <li>Precision Diagnostics Lab - Smart Diagnostic Room.</li>
                     <li>Precision in Diagnosis, Confidence in Treatment.</li>
                 </ul>
