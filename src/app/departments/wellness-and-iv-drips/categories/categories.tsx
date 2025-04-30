@@ -23,7 +23,7 @@ export const Categories = () => {
                     </h3>
                     <button 
                     onClick={() => toggleIndex(index)}
-                        className="border-2 border-white rounded p-2 ms-4 my-2">
+                        className="border-2 border-[#ee2424]  rounded p-2 ms-4 my-2">
                         {visible[index] ? "Hide" : "Show All"}
                     </button>
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
