@@ -14,16 +14,19 @@
     alt: string;
     title: string;
     describtion: React.ReactNode;
+    list: React.ReactNode
     }
 
-    export const DepartmentCard: React.FC<Props> = ({ src, alt, title, describtion }) => {
+    export const DepartmentCard: React.FC<Props> = ({ src, alt, title, describtion, list }) => {
     // Refs for card and child elements
     const cardRef = useRef<HTMLDivElement | null>(null);
     const overlayRef = useRef<HTMLDivElement | null>(null);
     const imageRef = useRef<HTMLImageElement | null>(null);
     const titleRef = useRef<HTMLHeadingElement | null>(null);
     const descRef = useRef<HTMLDivElement | null>(null);
-    const buttonRef = useRef<HTMLDivElement | null>(null);
+    const buttonRef = useRef<HTMLAnchorElement | null>(null);
+    const featureRef = useRef<HTMLDivElement | null>(null);
+    const listRef = useRef<HTMLDivElement | null>(null);
     const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
     useEffect(() => {
@@ -41,7 +44,7 @@
         // Set initial states
         gsap.set(overlayRef.current, { y: 0 });
         gsap.set(imageRef.current, { opacity: 0 });
-        gsap.set([titleRef.current, descRef.current, buttonRef.current], { y: -50, opacity: 0 });
+        gsap.set([titleRef.current, descRef.current, buttonRef.current, featureRef.current, listRef.current], { y: -50, opacity: 0 });
 
         // Create timeline
         timelineRef.current = gsap.timeline({ paused: true })
@@ -52,15 +55,12 @@
             ease: 'power2.out',
         })
         // Fade in image
-        .to(
-            imageRef.current,
-            {
-            opacity: 1,
-            duration: 0.5,
-            ease: 'power2.out',
-            },
-            '-=0.8'
-        )
+            .fromTo(
+                imageRef.current,
+                { opacity: 0, scale: 1.2 },
+                { opacity: 1, scale: 1, duration: 1, ease: 'power2.out' },
+                '-=0.8'
+            )
         // Slide in title
         .to(
             titleRef.current,
@@ -84,6 +84,26 @@
             '-=0.4'
         )
         // Slide in button
+            .to(
+            featureRef.current,
+            {
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                ease: 'power2.out',
+            },
+            '-=0.4'
+            )
+            .to(
+                listRef.current,
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                },
+                '-=0.4'
+            )
         .to(
             buttonRef.current,
             {
@@ -115,7 +135,7 @@
 
     return (
         <div
-        className="flex items-center justify-center flex-col min-w-92 max-w-96 bg-white pt-2 shadow-2xl rounded-2xl relative"
+        className="flex items-center justify-center flex-col min-w-96 max-w-96 bg-white pt-2 shadow-2xl rounded relative"
         ref={cardRef}
         >
         <div className="relative">
@@ -129,40 +149,39 @@
             alt={alt}
             width={350}
             height={200}
-            className="rounded-lg"
+            className="rounded"
             loading="lazy"
             ref={imageRef}
             />
         </div>
-        <div className="flex h-64 flex-col items-center justify-around">
+        <div className="flex h-92 flex-col px-4 justify-around">
             <h1
-            className="text-[20px] mb-auto font-bold text-center mt-4"
+            className="text-[20px] my-2 font-bold text-center mt-4"
             ref={titleRef}
             >
             {title}
             </h1>
             <div
-            className="text-[16px] sm:text-[18px] text-center overflow-hidden text-ellipsis whitespace-wrap line-clamp-3 px-2"
+            className="text-[16px] sm:text-[18px] text-start overflow-hidden text-ellipsis whitespace-wrap font-light line-clamp-3 px-2"
             ref={descRef}
             >
             {describtion}
             </div>
-            <div
-            className="w-32 py-2 flex items-center justify-center mt-2 mb-2"
-            ref={buttonRef}
-            >
+            <div ref={featureRef} className='flex items-center justify-center'>
+                <span className='border-b border-[#ee2424] px-10'></span>
+                    <p className='mx-2 text-[14px] sm:text-[16px] font-bold'>Featured treatments</p>
+                <span className='border-b border-[#ee2424] px-10'></span>
+            </div>
+            <div ref={listRef} className='my-auto text-start ps-2 text-[14px] sm:text-[16px] font-bold'>
+                {list}
+            </div>
             <Link
+                ref={buttonRef}
+                    className='py-2 flex items-center bg-[#fac06a] px-2 my-4 border-2 border-[#ffa826] shadow-2xl rounded justify-center'
                 href={`/departments/${title.replace(/\s+/g, '-').toLowerCase()}`}
             >
-                <Image
-                src="/departments-section/right.png"
-                alt='show more'
-                className='w-16 sm:w-20'
-                width={256}
-                height={256}
-                />
+                {title} &rarr;
             </Link>
-            </div>
         </div>
         </div>
     );
