@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";
 import data from "./categories.json"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+
 
 export const Categories = () => {
     const [visible, setVisible] = useState<boolean[]>(() => data.map(() => false));
@@ -23,8 +27,10 @@ export const Categories = () => {
                     </h3>
                     <button 
                     onClick={() => toggleIndex(index)}
-                        className="border-2 border-[#ee2424] rounded p-2 ms-4 my-2">
-                        {visible[index] ? "Hide" : "Show All"}
+                        className="p-2 ms-4 my-2 text-[22px] sm:text-[24px] md:text-[26px]">
+                        {visible[index] ? <FontAwesomeIcon icon={faEyeSlash} className="text-black hover:text-[#ee2424]"/> 
+                        : 
+                        <FontAwesomeIcon icon={faEye}  className="text-black hover:text-[#ee2424]"/>}
                     </button>
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                         }`}>
