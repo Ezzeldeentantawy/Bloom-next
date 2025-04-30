@@ -1,4 +1,3 @@
-import { div, h1 } from "framer-motion/client"
 import { DepartmentCard } from "./departments/department-card"
 
 export const Departments = () => {
