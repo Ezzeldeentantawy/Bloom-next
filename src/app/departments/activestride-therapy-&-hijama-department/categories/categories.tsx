@@ -25,13 +25,15 @@ export const Categories = () => {
                     <h3 className="ps-4 text-black text-md sm:text-lg lg:text-xl">
                         {category.description}
                     </h3>
-                    <button 
-                    onClick={() => toggleIndex(index)}
-                        className="p-2 ms-4 my-2 text-[22px] sm:text-[24px] md:text-[26px]">
-                        {visible[index] ? <FontAwesomeIcon icon={faEyeSlash} className="text-[#ee2424]"/> 
-                        : 
-                        <FontAwesomeIcon icon={faEye}  className="text-[#ee2424]"/>}
-                    </button>
+                    <div className="text-center">
+                        <button
+                            onClick={() => toggleIndex(index)}
+                            className="p-2 ms-4 my-2 text-[26px] sm:text-[30px] md:text-[32px]">
+                            {visible[index] ? <FontAwesomeIcon icon={faEyeSlash} className="text-[#ee2424]" />
+                                :
+                                <FontAwesomeIcon icon={faEye} className="text-[#ee2424]" />}
+                        </button>
+                    </div>
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                         }`}>
                             <div className="w-full max-w-2xl rounded-2xl">
