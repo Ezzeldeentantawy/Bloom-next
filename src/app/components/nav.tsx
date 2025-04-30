@@ -38,7 +38,7 @@ export const Navbar = () => {
     const pathname = usePathname();
     return(
     <>
-            <nav ref={nav} className="nav-blurry-bg relative block text-white z-10">
+            <nav ref={nav} className="nav-blurry-bg text-white z-10">
             <div className="hidden lg:flex flex-col justify-end pe-4 items-center py-0 lg:py-2">
                 <div className="flex items-center justify-between w-full">
                     <div className="py-4">
@@ -62,7 +62,7 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div className="lg:hidden fixed bg-black top-0 right-0 left-0 flex items-center justify-between p-4">
+            <div className="lg:hidden fixed nav-blurry-bg flex items-center justify-between p-4">
                 <div className="flex items-center justify-center gap-4">
                     <Image src="/header/nav/logo.png" alt="our logo"
                     width={120}

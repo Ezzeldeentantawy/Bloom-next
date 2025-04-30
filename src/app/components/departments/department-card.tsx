@@ -135,7 +135,7 @@
 
     return (
         <div
-        className="flex items-center justify-center flex-col min-w-96 max-w-96 bg-white pt-2 shadow-2xl rounded relative mx-auto"
+        className="flex items-center justify-center flex-col min-w-92 max-w-96 bg-white pt-2 shadow-2xl rounded relative"
         ref={cardRef}
         >
         <div className="relative">
