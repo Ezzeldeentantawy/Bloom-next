@@ -11,7 +11,7 @@ export default function ContactPage() {
             <div className='w-full'>
             <Navbar/>
             </div>
-            <div className="max-w-4xl w-full text-center mt-4 space-y-6">
+            <div className="max-w-4xl mt-8  w-full text-center space-y-6">
                 {/* Header */}
                 <h1 className="text-4xl font-bold">Contact Beauty Clinic</h1>
                 <p className="text-lg text-[#ee2424]/80">
