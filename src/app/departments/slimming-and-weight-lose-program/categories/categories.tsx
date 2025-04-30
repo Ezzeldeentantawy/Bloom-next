@@ -4,6 +4,8 @@ import data from "./categories.json"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { SlashSvg } from "@/app/components/slashSvg";
+import { Svg } from "@/app/components/svg";
 
 export const Categories = () => {
     const [visible, setVisible] = useState<boolean[]>(() => data.map(() => false));
@@ -28,9 +30,7 @@ export const Categories = () => {
                         <button
                             onClick={() => toggleIndex(index)}
                             className="p-2 ms-4 my-2 text-[26px] sm:text-[30px] md:text-[32px]">
-                            {visible[index] ? <FontAwesomeIcon icon={faEyeSlash} className="text-[#ee2424]" />
-                                :
-                                <FontAwesomeIcon icon={faEye} className="text-[#ee2424]" />}
+                            {visible[index] ? <SlashSvg/> : <Svg/>}
                         </button>
                     </div>
                     <div className={`transition-all duration-500 overflow-hidden ${visible[index] ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'

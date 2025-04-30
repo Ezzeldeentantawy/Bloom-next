@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SlashSvg } from "@/app/components/slashSvg";
+import { Svg } from "@/app/components/svg";
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -57,8 +59,8 @@ export const Header = () => {
                         </h2>
                         <button onClick={() => setIsOpen(!isOpen)}>
                             {isOpen
-                                ? <FontAwesomeIcon icon={faEyeSlash} className="ms-4 text-black hover:text-inherit text-[22px] sm:text-[24px] md:text-[26px]" />
-                                : <FontAwesomeIcon icon={faEye} className="ms-4 text-black hover:text-inherit text-[22px] sm:text-[24px] md:text-[26px]" />}
+                                ? <SlashSvg/>
+                                : <Svg/>}
                         </button>
                     </div>
 

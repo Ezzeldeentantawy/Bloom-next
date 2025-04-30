@@ -32,7 +32,7 @@ export default function DermatologyAndAesthetics({
 }>) {
     return (
         <section
-        className="bg-[#fac06a]"
+        className="owbg"
         >{children}</section>
     );
 }

@@ -5,6 +5,7 @@ import { WhyUs } from "./components/whyUs";
 import { Metadata } from 'next';
 import { Contact } from "./components/contact";
 import { BookNowCard } from "./components/book";
+import { Svg } from "./components/svg";
 
 export const metadata: Metadata = {
   title: 'Best Medical Center in Ras-Elkhaima | Skin, Laser, Botox & More',

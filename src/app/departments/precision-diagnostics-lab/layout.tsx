@@ -45,7 +45,7 @@ import "../../globals.css";
     }>) {
     return (
         <section
-            className="bg-[#fac06a]"
+            className="owbg"
         >{children}</section>
     );
     }

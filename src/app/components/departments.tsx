@@ -10,6 +10,9 @@ export const Departments = () => {
                 <p className="text-black text-lg mb-4">
                     Explore our wide range of departments and services designed to cater to
                 </p>
+            </div>
+            <div className="m-4 flex flex-wrap items-center justify-center gap-6">
+                {/*---------------------------------------------------------------------------------------*/}
                 <DepartmentCard
                     src="/departments-section/PDL.jpeg"
                     alt="Precision Diagnostics Lab image"
@@ -19,16 +22,13 @@ export const Departments = () => {
                     </p>}
                     list={
                         <>
-                        <p>Visia AI Skin Analysis</p>
-                        <p>Foto Finder AI Hair Analysis</p>
-                        <p>InBody Body Composition Analysis</p>
-                        <p>3D Digital Dental Scan</p>
+                            <p>Visia AI Skin Analysis</p>
+                            <p>Foto Finder AI Hair Analysis</p>
+                            <p>InBody Body Composition Analysis</p>
+                            <p>3D Digital Dental Scan</p>
                         </>
                     }
                 />
-            </div>
-            <div className="m-4 flex flex-wrap items-center justify-center gap-6">
-                {/*---------------------------------------------------------------------------------------*/}
                 <DepartmentCard
                     src="/departments-section/DAA.jpeg"
                     alt="Dermatology & Aesthic image"

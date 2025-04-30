@@ -33,7 +33,7 @@ export default function BeautyAndSkinCare({
     }>) {
     return (
         <section
-            className="bg-[#fac06a]"
+            className="owbg"
         >{children}</section>
     );
     }
