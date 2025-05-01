@@ -25,7 +25,6 @@ export const Categories = () => {
                         {category.description}
                     </h3>
                     <div className="flex flex-col items-center">
-                        &darr;
                         <button
                             onClick={() => toggleIndex(index)}
                             className="my-2 w-6">
