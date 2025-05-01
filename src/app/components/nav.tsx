@@ -20,11 +20,11 @@ export const Navbar = () => {
                 {x:-200, opacity:0},
                 {x:0, opacity:1, duration:1},
             );
-            tl.fromTo("#element1", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element2", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element3", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element5", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element6", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
+            tl.fromTo("#element1", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
+                .fromTo("#element2", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
+                .fromTo("#element3", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
+                .fromTo("#element5", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
+                .fromTo("#element6", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
         }else{
             gsap.fromTo(
                 mobileNav.current,
