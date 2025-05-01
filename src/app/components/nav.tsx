@@ -17,15 +17,14 @@ export const Navbar = () => {
         if(open === true){
             gsap.fromTo(
                 mobileNav.current,
-                {y:-100, opacity:0},
-                {y:0, opacity:1, duration:1},
+                {x:-200, opacity:0},
+                {x:0, opacity:1, duration:1},
             );
-            tl.fromTo("#element1", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, delay: .5, ease: "back.in" })
-                .fromTo("#element2", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element3", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element4", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element5", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
-                .fromTo("#element6", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
+            tl.fromTo("#element1", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
+                .fromTo("#element2", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
+                .fromTo("#element3", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
+                .fromTo("#element5", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
+                .fromTo("#element6", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, delay: .1, ease: "back.in" })
         }else{
             gsap.fromTo(
                 mobileNav.current,
@@ -62,7 +61,7 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div className="lg:hidden fixed nav-blurry-bg flex items-center justify-between p-4">
+            <div className="lg:hidden fixed bg-black top-0 right-0 left-0 flex items-center justify-between p-4">
                 <div className="flex items-center justify-center gap-4">
                     <Image src="/header/nav/logo.png" alt="our logo"
                     width={120}
