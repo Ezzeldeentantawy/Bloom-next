@@ -55,12 +55,12 @@
             ease: 'power2.out',
         })
         // Fade in image
-            // .fromTo(
-            //     imageRef.current,
-            //     { opacity: 0, scale: 1.2 },
-            //     { opacity: 1, scale: 1, duration: 1, ease: 'power2.out' },
-            //     '-=0.8'
-            // )
+            .fromTo(
+                imageRef.current,
+                { opacity: 0, scale: 1.1 },
+                { opacity: 1, scale: 1, duration: 1, ease: 'power2.out' },
+                '-=0.8'
+            )
         // Slide in title
         .to(
             titleRef.current,
