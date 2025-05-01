@@ -135,7 +135,7 @@
 
     return (
         <div
-        className="flex items-center justify-center flex-col min-w-80 max-w-96 bg-white pt-2 shadow-2xl rounded relative"
+        className="flex items-center justify-center flex-col min-w-72 max-w-80 sm:min-w-96 sm:max-w-96 bg-white pt-2 shadow-2xl rounded relative"
         ref={cardRef}
         >
         <div className="relative">
@@ -149,7 +149,7 @@
             alt={alt}
             width={350}
             height={200}
-            className="rounded"
+            className="rounded w-64 sm:w-80"
             loading="lazy"
             ref={imageRef}
             />
