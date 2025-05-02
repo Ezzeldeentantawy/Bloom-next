@@ -9,12 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 interface Props {
-    src: string
-    title: string
-    department: string
+    src: string;
+    title: string;
+    department: string;
 }
 
-export const Treatment = ({src, title, department} : Props) => {
+export const Treatment = ({ src, title, department }: Props) => {
     const cardRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ export const Treatment = ({src, title, department} : Props) => {
                     trigger: card,
                     start: "top 80%",
                     end: "bottom 60%",
-                    toggleActions: "play none none reverse",
+                    toggleActions: "play reverse play reverse", // 👈 This line makes it repeat on scroll up/down
                     markers: false,
                 },
             });
@@ -37,30 +37,34 @@ export const Treatment = ({src, title, department} : Props) => {
                 y: 100,
                 duration: 1,
                 ease: "power3.out",
-            })
-                .from(card.querySelectorAll(".treatment-title, .department-title, .arrow-icon"), {
+            }).from(
+                card.querySelectorAll(
+                    ".treatment-title, .department-title, .arrow-icon"
+                ),
+                {
                     opacity: 0,
                     y: 30,
                     stagger: 0.4,
                     duration: 1.5,
                     ease: "back.out(1.7)",
-                }, "-=0.4");
+                },
+                "-=0.4"
+            );
         }, card);
 
         return () => ctx.revert();
     }, []);
 
-
     const style = {
         backgroundImage: `url(${src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-    }
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    };
 
-    return( 
-        <div 
+    return (
+        <div
             ref={cardRef}
-            style={style} 
+            style={style}
             className="relative flex items-center m-2 sm:m-6 md:m-10 h-96 justify-around flex-col w-[304px] sm:w-[360px] rounded"
         >
             <div className="absolute inset-0">
@@ -79,7 +83,9 @@ export const Treatment = ({src, title, department} : Props) => {
                 </div>
                 <div className="flex items-center justify-center mt-2">
                     <Link
-                        href={`/departments/${department.replace(/\s+/g, '-').toLowerCase()}/` + `#${title.replace(/\s+/g, '-').toLowerCase()}`}
+                        href={`/departments/${department
+                            .replace(/\s+/g, "-")
+                            .toLowerCase()}/#${title.replace(/\s+/g, "-").toLowerCase()}`}
                     >
                         <FontAwesomeIcon
                             icon={faArrowAltCircleRight}
@@ -89,5 +95,5 @@ export const Treatment = ({src, title, department} : Props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
