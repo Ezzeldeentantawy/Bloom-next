@@ -58,3 +58,56 @@ html {
   z-index: -1;
   position: fixed;
 }
+.treatment-title {
+  position: relative;
+  z-index: 0;
+
+}
+.treatment-title::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(50px);
+    background-color: #fac06a;
+    opacity: 0.3;
+    -webkit-backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.sub-title {
+  position: relative;
+
+}
+
+.sub-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+  -webkit-backdrop-filter: blur(50px);
+  z-index: -1;
+}
+.subH-title {
+  position: relative;
+}
+
+.subH-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  background-color: black;
+  opacity: 0.2;
+  -webkit-backdrop-filter: blur(50px);
+  z-index: -1;
+}
