@@ -14,7 +14,7 @@ export default function PrecisionDiagnosticsLab() {
     return(
         <>
         <Navbar/>
-        <div className="pb-6 pt-24 lg:pt-6">
+        <div className="pb-6">
             <Header />
             <div className="text-center my-4">
                 <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64"></span>

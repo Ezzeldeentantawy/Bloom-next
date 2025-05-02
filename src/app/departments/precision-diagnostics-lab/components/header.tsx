@@ -9,40 +9,23 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex flex-col items-center justify-center text-black px-1 sm:px-6 md:px-10">
-            <div className="flex items-center justify-center">
-                <Image
-                    src="/departments-section/PDL.jpeg"
-                    alt="Precision Diagnostics Lab"
-                    className="rounded-2xl mb-4"
-                    width={500}
-                    height={500}
-                />
-            </div>
-            <div className="flex items-start flex-col">
-                <div className="flex flex-col items-center justify-center w-full">
-                    <h1 className="text-[28px] sm:text-[30px] md:text-[34px] text-[#ee2424] text-center w-full">
+        <div className="flex flex-col items-center justify-center text-black mt-[91.06px] lg:mt-0">
+            <div className="precision flex items-center bg-[100%] sm:bg-[80%] md:bg-[50%] lg:bg-center justify-center w-full h-[500px]">
+                <div className="treatment-title w-[90%] sm:w-2/4 px-2 sm:px-6 md:px-10 lg:px-14">
+                    <h1 className="text-[22px] sm:text-[26px] md:text-[30px] text-[#ee2424] mt-4 text-center w-full">
                         PreCare SmartPlan Diagnostics
                     </h1>
-                    <div className="flex items-center justify-center">
-                        <Image
-                            src="/departments-section/diagnostic.png"
-                            alt="giagnostic"
-                            className="flex items-center justify-center"
-                            width={64}
-                            height={64}
-                        />
-                    </div>
-                    <h1 className="text-[22px] sm:text-[26px] md:text-[30px] text-[#ee2424] text-center w-full">
+                    <h1 className="text-[20px] sm:text-[22px] md:text-[26px] w-[90%] ps-1 sm:ps-2 md:ps-4 text-white text-center">
                         Smart pre-diagnostics
                         for an optimal treatment plan.
                     </h1>
+                    <ul className="text-[16px] sm:text-[18px] md:text-[20px] mt-4 mb-14 ps-2 sm:ps-4 md:ps-8 lg:ps-12 text-start w-full rounded">
+                        <li>&bull; Precision Diagnostics Lab - Smart Diagnostic Room.</li>
+                        <li>&bull; Precision in Diagnosis, Confidence in Treatment.</li>
+                    </ul>
                 </div>
-
-                <ul className="text-[22px] sm:text-[24px] md:text-[26px] mt-4 ps-1 text-center w-full rounded border border-white">
-                    <li>Precision Diagnostics Lab - Smart Diagnostic Room.</li>
-                    <li>Precision in Diagnosis, Confidence in Treatment.</li>
-                </ul>
+            </div>
+            <div className="flex items-start flex-col">
 
                 <p className="text-[16px] sm:text-[18px] md:text-[20px] mt-4 px-2 sm:px-4 md:px-6 lg:px-10">
                     <span className="text-primary-color">At Precision Diagnostics Lab</span>, we utilize cutting-edge <span className="underline decoration-1">
@@ -51,7 +34,7 @@ export const Header = () => {
                 </p>
 
                 <div className="mt-6 w-full">
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-center flex-col">
                         <h2 className="text-[22px] sm:text-[24px] md:text-[26px] text-[#ee2424]">
                             &bull; What does Precision Diagnostics Lab Offer?
                         </h2>
