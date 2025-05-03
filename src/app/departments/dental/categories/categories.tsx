@@ -7,17 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-interface Item {
-    name: string;
-    description: string;
-}
-
-interface Category {
-    title: string;
-    description: string;
-    items: (Item | string)[];
-}
-
 export const Categories = () => {
     const [visible, setVisible] = useState<boolean[]>(() => data.map(() => false));
     const [activeItem, setActiveItem] = useState<string>("");
