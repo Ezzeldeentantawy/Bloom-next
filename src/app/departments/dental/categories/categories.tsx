@@ -96,7 +96,7 @@ export const Categories = () => {
                                             id={itemId}
                                         >
                                             <div className="flex items-center justify-between">
-                                                <span className="relative z-10">{itemIndex + 1}- {itemName}</span>
+                                                <span className="relative z-10 w-[260px]">{itemIndex + 1}- {itemName}</span>
                                                 {!isStringItem &&
                                                     itemDescription &&
                                                     itemDescription.trim() !== "" && (
