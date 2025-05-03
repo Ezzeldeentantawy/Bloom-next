@@ -3,29 +3,95 @@
     "title": "Dental",
     "description": "Discover comprehensive dental care with cosmetic dentistry, orthodontic solutions, and preventive treatments. From teeth whitening to root canal therapy, achieve a healthy, radiant smile with advanced care.",
     "items": [
-        "Cosmetic Dentistry",
-        "Teeth Whitening",
-        "Veneers",
-        "Smile Makeovers",
-        "Orthodontic Solutions",
-        "Modern Braces",
-        "Aligners",
-        "Preventive Care",
-        "Professional Cleanings",
-        "Gum Health Management",
-        "Cavity Prevention Strategies",
-        "Endodontic Treatments",
-        "Root Canal Therapy",
-        "Periodontal Care",
-        "Gum Disease Treatment",
-        "Scaling & Gum Therapy",
-        "Night Guards",
-        "Fillings & Extractions",
-        "Zoom/Nano Whitening",
-        "Hollywood Smile",
-        "Crowns & Bridges",
-        "Braces & Aligners"
-    ]
+                {
+                    "name": "Cosmetic Dentistry",
+                    "description": "Enhances smile aesthetics through procedures like teeth whitening, veneers, and smile makeovers."
+                },
+                {
+                    "name": "Teeth Whitening",
+                    "description": "Utilizes Zoom/Nano Whitening technology for a brighter, youthful smile."
+                },
+                {
+                    "name": "Zoom/Nano Whitening",
+                    "description": "Advanced whitening technology for a radiant, youthful smile."
+                },
+                {
+                    "name": "Veneers",
+                    "description": "Customized thin shells applied to teeth for a flawless aesthetic appearance."
+                },
+                {
+                    "name": "Smile Makeovers",
+                    "description": "Comprehensive aesthetic enhancements tailored for a perfect smile."
+                },
+                {
+                    "name": "Hollywood Smile",
+                    "description": "Customized veneers and enhancements for a flawless, celebrity-like smile."
+                },
+                {
+                    "name": "Crowns & Bridges",
+                    "description": "Restores damaged teeth with natural-looking solutions for improved aesthetics and function."
+                },
+                {
+                    "name": "Orthodontic Solutions",
+                    "description": "Corrects alignment and bite issues using modern braces and aligners for functional and aesthetic improvement."
+                },
+                {
+                    "name": "Modern Braces",
+                    "description": "Advanced orthodontic braces to correct tooth alignment and improve bite."
+                },
+                {
+                    "name": "Aligners",
+                    "description": "Clear, removable aligners for discreet and effective alignment correction."
+                },
+                {
+                    "name": "Braces & Aligners",
+                    "description": "Combines modern braces and clear aligners to correct alignment for functional and aesthetic improvement."
+                },
+                {
+                    "name": "Preventive Care",
+                    "description": "Focuses on maintaining oral health through cleanings, gum management, and cavity prevention."
+                },
+                {
+                    "name": "Professional Cleanings",
+                    "description": "Regular deep cleanings to remove plaque and maintain oral health."
+                },
+                {
+                    "name": "Gum Health Management",
+                    "description": "Strategies to maintain healthy gums and prevent periodontal issues."
+                },
+                {
+                    "name": "Cavity Prevention Strategies",
+                    "description": "Proactive measures to protect teeth from decay and cavities."
+                },
+                {
+                    "name": "Endodontic Treatments",
+                    "description": "Specialized procedures like root canal therapy to save and strengthen damaged teeth."
+                },
+                {
+                    "name": "Root Canal Therapy",
+                    "description": "Preserves teeth by treating deep infections to restore health and function."
+                },
+                {
+                    "name": "Periodontal Care",
+                    "description": "Targeted treatments to manage gum disease and protect oral and overall health."
+                },
+                {
+                    "name": "Gum Disease Treatment",
+                    "description": "Advanced therapies to treat and manage gum disease for improved oral health."
+                },
+                {
+                    "name": "Scaling & Gum Therapy",
+                    "description": "Deep cleaning and laser treatments to prevent and treat gum disease."
+                },
+                {
+                    "name": "Night Guards",
+                    "description": "Protects teeth from grinding and promotes jaw health during sleep."
+                },
+                {
+                    "name": "Fillings & Extractions",
+                    "description": "Restorative fillings and tooth extractions to maintain oral structure and health."
+                }
+            ]
 },
 {
     "title": "Dental Services",
