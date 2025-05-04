@@ -61,7 +61,7 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div className="lg:hidden fixed top-0 right-0 left-0 flex z-1000 items-center justify-between p-4">
+            <div className="lg:hidden absolute top-0 right-0 left-0 flex z-1000 items-center justify-between p-4">
                 <div className="flex items-center justify-center gap-4">
                     <Image src="/header/nav/logo.png" alt="our logo"
                     width={120}
@@ -74,8 +74,8 @@ export const Navbar = () => {
                     setOpen(!open);
                 }
                 }
-                className="flex items-center justify-center gap-4">
-                    <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
+                className="flex items-center justify-center fixed top-9 right-6 gap-4">
+                    <FontAwesomeIcon icon={faBars} className="w-10 text-black h-10 text-2xl" />
                 </button>
             </div>
             
