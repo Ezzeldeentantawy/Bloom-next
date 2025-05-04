@@ -34,9 +34,24 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className="relative flex flex-col mcbg h-screen sm:h-[500px] md:h-[600px] lg:h-[700px] text-white">
+        <div className="relative flex flex-col h-screen sm:h-[500px] md:h-[600px] lg:h-[700px] text-white">
+
             <Navbar />
-            <div className="flex flex-col items-center justify-center text-center my-auto px-4">
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+            >
+                <source src="/header/header.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            {/* Gradient Overlay */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#fac06a] to-transparent opacity-60 z-0" />
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent opacity-60 z-0" />
+            <div className="flex flex-col items-center justify-center text-center my-auto px-4 z-50">
                 <h1
                     ref={titleRef}
                     className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight drop-shadow-lg"
