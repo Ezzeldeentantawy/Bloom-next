@@ -51,7 +51,7 @@ export const Header = () => {
             {/* Gradient Overlay */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#fac06a] to-transparent opacity-60 z-0" />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent opacity-60 z-0" />
-            <div className="flex flex-col items-center justify-center text-center my-auto px-4 z-50">
+            <div className="flex flex-col items-center justify-center text-center my-auto px-4 z-0">
                 <h1
                     ref={titleRef}
                     className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight drop-shadow-lg"
