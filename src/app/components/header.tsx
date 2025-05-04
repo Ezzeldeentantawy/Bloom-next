@@ -51,7 +51,7 @@ export const Header = () => {
             {/* Gradient Overlay */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#fac06a] to-transparent opacity-60 z-0" />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent opacity-60 z-0" />
-            <div className="flex flex-col items-center justify-center text-center my-auto px-4 z-0">
+            <div className="flex flex-col items-center text-center h-full pt-[91.06px] lg:pt-0 px-4 z-0">
                 <button
                     ref={buttonRef}
                     onClick={() => router.push("/book-now")}
@@ -59,7 +59,7 @@ export const Header = () => {
                 >
                     Book Now
                 </button>
-                <div className="flex items-center gap-4 mt-16">
+                <div className="flex items-center gap-4 mt-auto mb-10 sm:mb-20 md:mb-30">
                     <Link
                             className="hover:text-red-600 text-[20px] sm:text-[22px] md:text-[24px] transition duration-300"
                             href="tel:+010000000">
