@@ -74,7 +74,7 @@ export const Header = () => {
                 >
                     Book Now
                 </button>
-                <h1 className="text-[18px] sm:text-[20px] text-primary-color my-4">Follow us on Social Media</h1>
+                <h1 className="text-[18px] sm:text-[20px] text-white my-4">Follow us on Social Media</h1>
                 <div className="flex items-center gap-4">
                     <Link
                             className="hover:text-red-600 text-[20px] sm:text-[22px] md:text-[24px] transition duration-300"
