@@ -81,7 +81,7 @@ export const Navbar = () => {
             
         </nav>
             {open && 
-            <ul ref={mobileNav} className="h-full text-white mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden z-30">
+            <ul ref={mobileNav} className="h-full text-white mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden z-1000">
                 <button
                 className="text-4xl sm:text-6xl text-start m-4"
                 onClick={(e) => {
