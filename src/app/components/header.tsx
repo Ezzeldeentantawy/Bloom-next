@@ -59,7 +59,7 @@ export const Header = () => {
                 >
                     Book Now
                 </button>
-                <div className="flex items-center gap-4 mt-auto mb-10 sm:mb-20 md:mb-30">
+                <div className="flex items-center gap-4 mt-auto mb-20 sm:mb-25 md:mb-30">
                     <Link
                             className="hover:text-red-600 text-[20px] sm:text-[22px] md:text-[24px] transition duration-300"
                             href="tel:+010000000">
