@@ -15,9 +15,9 @@ export default function BookingPage() {
         <>
         <Navbar/>
         <section
-            className="min-h-screen bg-[#fac06a] py-16 px-4 mt-12 sm:mt-10 md:mt-8 flex flex-col items-center text-[#ee2424]"
+            className="min-h-screen bg-[#fac06a] py-16 px-4  flex flex-col items-center text-[#ee2424]"
         >
-            <div className="max-w-xl w-full bg-white p-8 rounded-2xl shadow-2xl space-y-8">
+            <div className="max-w-xl w-full bg-white p-8 rounded-2xl my-24 shadow-2xl space-y-8">
                 <h1 className="text-3xl font-bold text-center text-[#ee2424]">Book Your Appointment</h1>
 
                 <form className="grid gap-6">

@@ -21,11 +21,11 @@ export const Navbar = () => {
                 {x:-200, opacity:0},
                 {x:0, opacity:1, duration:1},
             );
-            tl.fromTo("#element1", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
-                .fromTo("#element2", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
-                .fromTo("#element3", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
-                .fromTo("#element5", { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
-                .fromTo("#element6", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, delay: .15, ease: "back.in" })
+            tl.fromTo("#element1", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: .5, delay: .15, ease: "back.in" })
+                .fromTo("#element2", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: .5, delay: .15, ease: "back.in" })
+                .fromTo("#element3", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: .5, delay: .15, ease: "back.in" })
+                .fromTo("#element5", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: .5, delay: .15, ease: "back.in" })
+                .fromTo("#element6", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: .5, delay: .15, ease: "back.in" })
         }else{
             gsap.fromTo(
                 mobileNav.current,
@@ -37,10 +37,12 @@ export const Navbar = () => {
 
     return(
     <>
-            <nav ref={nav} className="nav-blurry-bg text-white z-10">
+            <nav ref={nav} className="backdrop-blur-none w-full bg-[#00000099] text-white z-50">
             <div className="hidden lg:flex flex-col justify-end pe-4 items-center py-0 lg:py-2">
                 <div className="flex items-center justify-between w-full">
-                    <div className="py-4">
+                    <div 
+                    onClick={() => router.push("/")}
+                    className="py-4">
                         <Image src="/header/nav/logo.png" alt="our logo"
                         width={170}
                         height={120}
@@ -63,7 +65,7 @@ export const Navbar = () => {
             </div>
                 <div className="lg:hidden fixed top-0 left-0 right-0 w-full backdrop-blur-none bg-[#00000099] z-50 flex items-center justify-between p-4">
                     <div 
-                    onClick={() => router.push("/book-now")}
+                    onClick={() => router.push("/")}
                     className="flex items-center justify-center gap-4">
                         <Image
                             src="/header/nav/logo.png"
