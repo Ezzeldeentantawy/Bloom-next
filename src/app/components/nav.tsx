@@ -61,7 +61,7 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-                <div className="lg:hidden fixed top-0 left-0 right-0 w-full h-[91.06px] lg:h-[131px] backdrop-blur-none bg-[#00000099] z-50 flex items-center justify-between p-4">
+                <div className="lg:hidden fixed top-0 left-0 right-0 w-full backdrop-blur-none bg-[#00000099] z-50 flex items-center justify-between p-4">
                     <div 
                     onClick={() => router.push("/book-now")}
                     className="flex items-center justify-center gap-4">
@@ -81,11 +81,9 @@ export const Navbar = () => {
                         >
                             <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
                         </button>
-                </div>
-            
-        </nav>
-                        {open &&
-                            <ul ref={mobileNav} className="ms-auto bg-white shadow-2xl w-[180px] sm:w-[220px] text-black mobile-nav-blurry-bg flex flex-col lg:hidden z-1000">
+                    {open &&
+                        <ul ref={mobileNav} className="ms-auto p-4 bg-[#c8c8c8] shadow-2xl w-[220px] sm:w-[250px] text-black top-0 right-0 absolute lg:hidden z-1000">
+                            <div className="bg-white rounded flex flex-col h-fit py-4">
                                 <button
                                     className="text-2xl sm:text-4xl text-start ms-4"
                                     onClick={(e) => {
@@ -95,11 +93,11 @@ export const Navbar = () => {
                                 >
                                     ×
                                 </button>
-                                <li className="flex flex-col justify-around gap-5 w-full">
+                                <li className="flex flex-col justify-around gap-10 my-4 w-full">
                                     <Link id="element1"
                                         onClick={() => setOpen(false)}
                                         href="/#"
-                                        className={`py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
+                                        className={`text-md flex items-center justify-center hover:text-red-500`}>
                                         Home
                                     </Link>
                                     <Link
@@ -113,15 +111,19 @@ export const Navbar = () => {
                                         className="text-md flex items-center justify-center hover:text-red-500">
                                         Departments
                                     </Link>
-                                    <Link id="element5" href="/contact-us" className={`rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
+                                    <Link id="element5" href="/contact-us" className={`text-md flex items-center justify-center hover:text-red-500`}>
                                         Contact
                                     </Link>
-                                    <Link id="element6" href="/book-now" className={`rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
+                                    <Link id="element6" href="/book-now" className={`text-md flex items-center justify-center hover:text-red-500`}>
                                         Book now
                                     </Link>
                                 </li>
-                            </ul>
-                        }
+                            </div>
+                        </ul>
+                    }
+                </div>
+            
+        </nav>
     </>
     )
 }
