@@ -34,7 +34,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className="relative flex flex-col h-screen sm:h-[500px] md:h-[600px] lg:h-[700px] text-white">
+        <div className="relative flex flex-col h-screen sm:h-screen md:h-[600px] lg:h-[700px] text-white">
 
             <Navbar />
             <video
@@ -52,30 +52,14 @@ export const Header = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#fac06a] to-transparent opacity-60 z-0" />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent opacity-60 z-0" />
             <div className="flex flex-col items-center justify-center text-center my-auto px-4 z-0">
-                <h1
-                    ref={titleRef}
-                    className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight drop-shadow-lg"
-                >
-                    Discover Confidence Through Care
-                </h1>
-                <p
-                    ref={descRef}
-                    className="mt-4 text-base sm:text-lg max-w-2xl text-white/90"
-                >
-                    At our state-of-the-art clinic, we combine advanced diagnostics and
-                    personalized treatments to help you feel and look your best. From
-                    laser hair removal to precision wellness tests — your transformation
-                    begins here.
-                </p>
                 <button
                     ref={buttonRef}
                     onClick={() => router.push("/book-now")}
-                    className="text-base sm:text-lg mt-6 border-2 border-[#ee2424] text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-2xl hover:bg-white hover:text-black transition-all duration-300"
+                    className="text-base sm:text-lg mt-6 border-2 border-[#ee2424] text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-2xl hover:text-black transition-all duration-300"
                 >
                     Book Now
                 </button>
-                <h1 className="text-[18px] sm:text-[20px] text-white my-4">Follow us on Social Media</h1>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 mt-16">
                     <Link
                             className="hover:text-red-600 text-[20px] sm:text-[22px] md:text-[24px] transition duration-300"
                             href="tel:+010000000">
