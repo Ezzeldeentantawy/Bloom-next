@@ -77,41 +77,6 @@ html {
     z-index: -1;
     border-radius: 10px;
 }
-.sub-title {
-  position: relative;
-
-}
-
-.sub-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(10px);
-  background-color: rgb(255, 255, 255);
-  opacity: 0.2;
-  -webkit-backdrop-filter: blur(50px);
-  z-index: -1;
-}
-.subH-title {
-  position: relative;
-}
-
-.subH-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(10px);
-  background-color: black;
-  opacity: 0.2;
-  -webkit-backdrop-filter: blur(50px);
-  z-index: -1;
-}
 .precision {
   background-image: url(/departments-section/PDL.jpeg);
 }
