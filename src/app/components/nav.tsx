@@ -6,11 +6,13 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
+import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false); 
     const nav = useRef<HTMLDivElement>(null);
     const mobileNav = useRef<HTMLUListElement>(null);
+    const router = useRouter();
 
     useEffect(() => {
         const tl = gsap.timeline();
@@ -61,8 +63,10 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-                <div className="lg:hidden fixed top-0 left-0 w-full h-[91.06px] lg:h-[131px] backdrop-blur-none bg-[#00000099] z-50 flex items-center justify-between p-4">
-                    <div className="flex items-center justify-center gap-4">
+                <div className="lg:hidden fixed top-0 left-0 right-0 w-full h-[91.06px] lg:h-[131px] backdrop-blur-none bg-[#00000099] z-50 flex items-center justify-between p-4">
+                    <div 
+                    onClick={() => router.push("/book-now")}
+                    className="flex items-center justify-center gap-4">
                         <Image
                             src="/header/nav/logo.png"
                             alt="our logo"
@@ -70,95 +74,56 @@ export const Navbar = () => {
                             height={100}
                         />
                     </div>
-                    <button
-                        onClick={(e) => {
-                            e.preventDefault();
-                            setOpen(!open);
-                        }}
-                        className="flex items-center justify-center gap-4"
-                    >
-                        <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
-                    </button>
+                        <button
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setOpen(!open);
+                            }}
+                            className="flex items-center justify-center gap-4"
+                        >
+                            <FontAwesomeIcon icon={faBars} className="w-10 h-10 text-2xl" />
+                        </button>
                 </div>
             
         </nav>
-            {open && 
-            <ul ref={mobileNav} className="h-full text-white mobile-nav-blurry-bg inset-0 flex flex-col lg:hidden z-1000">
-                <button
-                className="text-4xl sm:text-6xl text-start m-4"
-                onClick={(e) => {
-                    e.preventDefault();
-                    setOpen(false);
-                }}
-                >
-                        ×
-                </button>
-                <li className="relative flex flex-col justify-around w-full h-full my-4">
-                    <Link id="element1" 
-                    onClick={() => setOpen(false)}
-                    href="/#" 
-                    className={`${pathname === "/" ? "mcbg" : "" } mx-24 py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
-                    <Image 
-                    src="/header/nav/home.png"
-                    alt="home page"
-                    className="me-2"
-                    width={32}
-                    height={32}
-                    />
-                    Home
-                    </Link>
-                    <span className="border-b border-white py-3"></span>
-                        <Link 
-                        onClick={() => setOpen(false)}
-                        id="element2" href="/#Whyus" className=" flex items-center justify-center text-md hover:text-red-500">
-                    <Image
-                        src="/header/nav/help.png"
-                        alt="home page"
-                        className="me-2"
-                        width={32}
-                        height={32}
-                    />
-                    Why us?
-                    </Link>
-                    <span className="border-b border-white py-3"></span>
-                    <Link id="element3"
-                    onClick={() => setOpen(false)}
-                        href="/#departments"
-                            className="text-md flex items-center justify-center hover:text-red-500">
-                            <Image
-                                src="/header/nav/structure.png"
-                                alt="home page"
-                                className="me-2"
-                                width={32}
-                                height={32}
-                            />
-                        Departments
-                    </Link>
-                        <span className="border-b border-white py-3"></span>
-                        <Link id="element5" href="/contact-us" className={`${pathname === "/contact-us" ? "mcbg" : "" } mx-24 rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
-                            <Image
-                                src="/header/nav/contact.png"
-                                alt="home page"
-                                className="me-2"
-                                width={32}
-                                height={32}
-                            />
-                    Contact
-                    </Link>
-                    <span className="border-b  border-white py-3"></span>
-                        <Link id="element6" href="/book-now" className={`${pathname === "/book-now" ? "mcbg" : "" } mx-24 rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
-                            <Image
-                                src="/header/nav/booking.png"
-                                alt="home page"
-                                className="me-2"
-                                width={32}
-                                height={32}
-                            />
-                    Book now
-                    </Link>
-                </li>
-            </ul>
-            }
+                        {open &&
+                            <ul ref={mobileNav} className="ms-auto bg-white shadow-2xl w-[180px] sm:w-[220px] text-black mobile-nav-blurry-bg flex flex-col lg:hidden z-1000">
+                                <button
+                                    className="text-2xl sm:text-4xl text-start ms-4"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setOpen(false);
+                                    }}
+                                >
+                                    ×
+                                </button>
+                                <li className="flex flex-col justify-around gap-5 w-full">
+                                    <Link id="element1"
+                                        onClick={() => setOpen(false)}
+                                        href="/#"
+                                        className={`py-2 rounded-2xl text-md flex items-center justify-center hover:text-red-500`}>
+                                        Home
+                                    </Link>
+                                    <Link
+                                        onClick={() => setOpen(false)}
+                                        id="element2" href="/#Whyus" className="flex items-center justify-center text-md hover:text-red-500">
+                                        Why us?
+                                    </Link>
+                                    <Link id="element3"
+                                        onClick={() => setOpen(false)}
+                                        href="/#departments"
+                                        className="text-md flex items-center justify-center hover:text-red-500">
+                                        Departments
+                                    </Link>
+                                    <Link id="element5" href="/contact-us" className={`rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
+                                        Contact
+                                    </Link>
+                                    <Link id="element6" href="/book-now" className={`rounded-2xl py-2 text-md flex items-center justify-center hover:text-red-500`}>
+                                        Book now
+                                    </Link>
+                                </li>
+                            </ul>
+                        }
     </>
     )
 }

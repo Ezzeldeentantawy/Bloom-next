@@ -41,21 +41,14 @@ html {
   z-index: -1;
 }
 .mobile-nav-blurry-bg {
-  position: fixed;
+  position: relative;
 }
 
 .mobile-nav-blurry-bg::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  backdrop-filter: blur(50px);
-  background-color: black;
-  opacity: 0.8;
-  -webkit-backdrop-filter: blur(50px);
-  z-index: -1;
   position: fixed;
 }
 .treatment-title {
