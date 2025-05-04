@@ -156,13 +156,13 @@
         </div>
         <div className="flex h-92 flex-col px-4 justify-around">
             <h1
-            className="text-[20px] my-2 font-bold text-center mt-4"
+            className="text-xl sm:text-[22px] md:text-[24px] my-2 font-bold text-center mt-4"
             ref={titleRef}
             >
             {title}
             </h1>
             <div
-            className="text-[16px] sm:text-[18px] text-start overflow-hidden text-ellipsis whitespace-wrap font-light line-clamp-3 px-2"
+            className="text-[16px] sm:text-[18px] md:text-[20px] text-start overflow-hidden text-ellipsis whitespace-wrap font-light line-clamp-3 px-2"
             ref={descRef}
             >
             {describtion}
@@ -172,12 +172,12 @@
                     <p className='mx-2 text-[14px] sm:text-[16px] font-bold'>Featured treatments</p>
                 <span className='border-b border-[#ee2424] px-10'></span>
             </div>
-            <div ref={listRef} className='my-auto text-start ps-2 text-[14px] sm:text-[16px] font-bold'>
+                <div ref={listRef} className='my-auto text-start ps-2 text-[14px] sm:text-[16px] font-bold'>
                 {list}
             </div>
             <Link
                 ref={buttonRef}
-                    className='py-2 flex items-center bg-[#fac06a] px-2 my-4 border-2 border-[#ffa826] shadow-2xl rounded justify-center'
+                    className='py-2 flex items-center bg-[#fac06a] px-2 my-4 border-2 border-[#ffa826] shadow-2xl text-[14px] sm:text-[16px] rounded justify-center'
                 href={`/departments/${title.replace(/\s+/g, '-').toLowerCase()}`}
             >
                 {title} &rarr;

@@ -4,10 +4,10 @@ export const Departments = () => {
     return(
         <section className="mt-5 mb-5" id="departments">
             <div className="flex flex-col items-center justify-center">
-                <h1 className="text-4xl font-bold text-main-color mb-4">
+                <h1 className="text-2xl sm:text-[26px] md:text-[28px] font-bold text-main-color mb-4">
                     Our Departments
                 </h1>
-                <p className="text-black text-lg mb-4">
+                <p className="text-black text-xl sm:text-[22px] md:text-[24px] mb-4">
                     Explore our wide range of departments and services designed to cater to
                 </p>
             </div>

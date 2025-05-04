@@ -39,13 +39,13 @@ export const Header = () => {
             <div className="flex flex-col items-center justify-center text-center my-auto px-4">
                 <h1
                     ref={titleRef}
-                    className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg"
+                    className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight drop-shadow-lg"
                 >
                     Discover Confidence Through Care
                 </h1>
                 <p
                     ref={descRef}
-                    className="mt-4 text-lg sm:text-xl max-w-2xl text-white/90"
+                    className="mt-4 text-base sm:text-lg max-w-2xl text-white/90"
                 >
                     At our state-of-the-art clinic, we combine advanced diagnostics and
                     personalized treatments to help you feel and look your best. From
@@ -55,11 +55,11 @@ export const Header = () => {
                 <button
                     ref={buttonRef}
                     onClick={() => router.push("/book-now")}
-                    className="mt-6 border-2 border-white text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-2xl hover:bg-white hover:text-black transition-all duration-300"
+                    className="text-base sm:text-lg mt-6 border-2 border-[#ee2424] text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-2xl hover:bg-white hover:text-black transition-all duration-300"
                 >
                     Book Now
                 </button>
-                <h1 className="text-[22px] sm:text-[24px] text-primary-color my-4">Follow us on Social Media</h1>
+                <h1 className="text-[18px] sm:text-[20px] text-primary-color my-4">Follow us on Social Media</h1>
                 <div className="flex items-center gap-4">
                     <Link
                             className="hover:text-red-600 text-[20px] sm:text-[22px] md:text-[24px] transition duration-300"
@@ -98,7 +98,6 @@ export const Header = () => {
                     </Link>
                 </div>
             </div>
-
             <Link
                 href="https://wa.me/201284124174"
                 target="_blank"

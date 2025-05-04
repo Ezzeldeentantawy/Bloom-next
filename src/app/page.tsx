@@ -34,9 +34,9 @@ export default function Home() {
         <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
         <Departments />
         <span className="border-b border-black px-24 sm:px-32 md:px-48 lg:px-64 text-center"></span>
+        <Treatments />
         <Contact />
         <BookNowCard />
-        <Treatments />
       </div>
     </>
   );
