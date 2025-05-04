@@ -55,7 +55,7 @@ export const Header = () => {
                 <button
                     ref={buttonRef}
                     onClick={() => router.push("/book-now")}
-                    className="text-base sm:text-lg mt-6 border-2 border-[#ee2424] text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-2xl hover:text-black transition-all duration-300"
+                    className="text-base sm:text-lg mt-auto border-2 border-[#ee2424] text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-2xl hover:text-black transition-all duration-300"
                 >
                     Book Now
                 </button>
